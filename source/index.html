@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин вязаных игрушек Мишка</title>
 </head>
+
 <body>
   <header class="page-header">
     <a class="page-header__logo"><img class="page-header__logo-image" src="#" width="" height="" alt=""></a>
     <nav class="main-nav">
-    <button class="main-nav__toggle">Открыть меню</button>
-    <div class="main-nav__wrapper">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-      <li class="site-list__item"><a href="">Вязание товаров</a></li>
-      <li class="site-list__item">Поиск по сайту</li>
-      <li class="site-list__item">Корзина: пока пуста</li>
-      <li class="site-list__item"><a href="">Вязание на заказ</a></li>
-      <li class="site-list__item"><a href="">Новые поступления</a></li>
-      <li class="site-list__item"><a href="">Распродажа</a></li>
-      <li class="site-list__item">Бесплатная доставка по России</li>
-    </ul>
-    <main class="page-main">
-      
-    </main>
-  </div>
-  </nav>
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <div class="main-nav__box">
+          <ul class="main-nav__list1 menu-list">
+            <li class="main-nav__item1 menu-list__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item1 menu-list__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list2 menu-list">
+            <li class="site-list__item2 menu-list__item"><a href="#">Новые поступления</a></li>
+            <li class="site-list__item2 menu-list__item"><a href="#">Распродажа</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__box">
+          <ul class="main-nav__list3 menu-list">
+            <li class="main-nav__item3">
+              <form class="search-site" method="get" action="https://echo.htmlacademy.ru">
+                <input class="search-site__input" id="search-field" type="search" name="search"
+                  placeholder="Поиск по сайту">
+                <label class="search-site__label" for="search-field">
+                  <span class="visually-hidden">Поиск:</span>
+                </label>
+              </form>
+            </li>
+            <li class="main-nav__item3 menu-list__item"><a class="main-nav__item2--basket" href="#">Корзина: пока
+                пуста</a></li>
+          </ul>
+          <ul class="main-nav__list4">
+            <li class="main-nav__item4 free-delivery">Бесплатная доставка по России</li>
+          </ul>
+        </div>
+        <main class="page-main">
+          <h1 class="page-main__title main-title">Милые штучки ручной работы для дома</h1>
+          <div class="category-section">
+            <ul class="category-section__list">
+              <li class="category-section__item"><a class="category-section__item--interior" href="#">Предметы интерьера</a></li>
+              <li class="category-section__item"><a class="category-section__item--toys" href="#">Детские игрушки</a></li>
+            </ul>
+          </div>
+          <article class="product">
+            <h2 class="product__title">Вязаные корзинки</h2>
+            <p class="product-week week-product">Товар недели</p>
+            <p class="product-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+              размерах.</p>
+            <table class="product-table">
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+
+          </article>
+        </main>
+      </div>
+    </nav>
   </header>
 </body>
+
 </html>
