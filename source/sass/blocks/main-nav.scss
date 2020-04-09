@@ -1,0 +1,41 @@
+.main-nav {
+    position: relative;
+}
+.main-nav__item {
+    display: none;
+}
+
+.main-nav__toggle {
+    // border: none;
+}
+
+.main-nav__toggle::before {
+    position: absolute;
+    content: "";
+    background: url("../../img/icon-menu-open.svg") no-repeat;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 14px;
+    padding-right: 5px;
+}
+
+
+// .main-nav__toggle:checked ~ .main-nav__item--catalog {
+//     display: block;
+// }
+
+.main-nav__toggle:checked ~ .main-nav__wrapper .main-nav__list--box {
+    display: block;
+
+    // position: absolute;
+}
+
+.main-nav__wrapper {
+    position: absolute;
+    content: "";
+    top: 55px;
+    right: 5px;
+    width: 260px;
+    height: 317px;
+}

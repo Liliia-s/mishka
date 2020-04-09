@@ -1,0 +1,20 @@
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+.page-header {
+    display: flex;
+    margin: 0 32px;
+    padding: 22px 0;
+}
+
+.page-header__logo {
+    margin: auto;    
+}
+
+
+// @media (min-width: $tablet-width) {
+//     .page-header__logo-image {
+//         background: url("../../img/logo-tablet.svg) no-repeat;
+//     }
+//  }
+
