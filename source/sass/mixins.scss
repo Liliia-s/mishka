@@ -1,9 +1,17 @@
-@mixin ul {
+@mixin indent {
     margin: 0;
     padding: 0;
 }
 
-@mixin font {
-    
-    
+@mixin list {
+    list-style: none;
 }
+
+@mixin absolute {
+    position: absolute;
+    content: "";        
+}
+
+
+// применить к другим местам list вместо переменной
+// применить к другим местам absolute вместо переменной

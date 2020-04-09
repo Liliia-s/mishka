@@ -1,13 +1,18 @@
 @import "variables";
 @import "mixins";
 @import "font-face";
+@import "blocks/visually-hidden";
+@import "blocks/title";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "outlines";
 @import "blocks/main-header";
 @import "blocks/product";
 @import "blocks/text-mark";
-
+@import "blocks/btn";
+@import "blocks/about-us";
+@import "blocks/reviews";
+@import "blocks/slider";
 
 
 body {
@@ -18,8 +23,8 @@ body {
     font-size: 15px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    line-height: 24px;
     color: #444444;
+    background-color: #ffffff;
 }
 
 img {
@@ -27,18 +32,14 @@ img {
     height: auto;
 }
 
-.title {
-    font-weight: 700px;
-    color: #010000;
+a {
+    text-decoration: none;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
