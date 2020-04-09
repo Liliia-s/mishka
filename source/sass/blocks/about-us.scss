@@ -35,59 +35,60 @@
 }
 
 
-// .about-us__item 
-
-.about-us__item--material::before {
-    @include absolute;
-    background: url("../../img/icon-feature-flower.svg") no-repeat;
-    top: 0;
-    left: 7px;
-    width: 32px;
-    height: 37px;
+.about-us__item {
+    &--material::before {
+        @include absolute;
+        background: url("../../img/icon-feature-flower.svg") no-repeat;
+        top: 0;
+        left: 7px;
+        width: 32px;
+        height: 37px;
+    }
+    
+    &--style::before {
+        @include absolute;
+        background: url("../../img/icon-feature-money.svg") no-repeat;
+        top: 2px;
+        left: 0;
+        width: 47px;
+        height: 27px;
+    }
+    
+    
+    &--like::before {
+        @include absolute;
+        background: url("../../img/icon-feature-heart.svg") no-repeat;
+        top: 6px;
+        left: 7px;
+        width: 33px;
+        height: 28px;
+    }
+    
+    &--love::before {
+        @include absolute;
+        background: url("../../img/icon-feature-ball.svg") no-repeat;
+        top: 4px;
+        left: 3px;
+        width: 34px;
+        height: 34px;
+    }
+    
+    &--support::before {
+        @include absolute;
+        background: url("../../img/icon-feature-rocket.svg") no-repeat;
+        top: 5px;
+        left: -5px;
+        width: 54px;
+        height: 23px;
+    }
+    
+    &--pack::before {
+        @include absolute;
+        background: url("../../img/icon-feature-gift.svg") no-repeat;
+        top: 3px;
+        left: 3px;
+        width: 33px;
+        height: 32px;
+    }
 }
 
-.about-us__item--style::before {
-    @include absolute;
-    background: url("../../img/icon-feature-money.svg") no-repeat;
-    top: 2px;
-    left: 0;
-    width: 47px;
-    height: 27px;
-}
-
-
-.about-us__item--like::before {
-    @include absolute;
-    background: url("../../img/icon-feature-heart.svg") no-repeat;
-    top: 6px;
-    left: 7px;
-    width: 33px;
-    height: 28px;
-}
-
-.about-us__item--love::before {
-    @include absolute;
-    background: url("../../img/icon-feature-ball.svg") no-repeat;
-    top: 4px;
-    left: 3px;
-    width: 34px;
-    height: 34px;
-}
-
-.about-us__item--support::before {
-    @include absolute;
-    background: url("../../img/icon-feature-rocket.svg") no-repeat;
-    top: 5px;
-    left: -5px;
-    width: 54px;
-    height: 23px;
-}
-
-.about-us__item--pack::before {
-    @include absolute;
-    background: url("../../img/icon-feature-gift.svg") no-repeat;
-    top: 3px;
-    left: 3px;
-    width: 33px;
-    height: 32px;
-}

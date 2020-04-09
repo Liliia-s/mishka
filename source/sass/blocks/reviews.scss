@@ -1,0 +1,70 @@
+.reviews {
+    padding-top: 25px;
+
+.reviews__wrapper {
+    margin: 0 29px;
+}
+
+}
+.reviews__title {
+    @include indent;
+    padding-bottom: 24px;
+}
+
+.reviews__item {
+    @include indent;
+}
+
+.reviews__text {
+    @include indent;
+    line-height: 30px;
+    padding-bottom: 27px;
+}
+
+.reviews__user-name {
+    display: inline-block;
+    padding-bottom: 3px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: $font-weight;
+}
+
+.reviews__user-nick {
+    @include indent;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.reviews__arrow-wrapper {
+    display: flex;
+    padding-bottom: 43px;
+}
+
+.reviews__arrow {
+    @include indent;
+    position: relative;
+    width: 130px;
+    height: 50px;
+    border: 1px solid #ececec;
+    background-color: transparent;
+
+    &--back::before {
+        @include absolute;
+        background: url("../../img/icon-left-arrow.svg") no-repeat;
+        width: 50px;
+        height: 26px;
+        top: 11px;
+        left: 39px;
+    }
+
+    &--next::before {
+        @include absolute;
+        background: url("../../img/icon-right-arrow.svg") no-repeat;
+        width: 50px;
+        height: 26px;
+        top: 11px;
+        left: 39px;
+    }
+}
