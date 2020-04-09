@@ -1,16 +1,17 @@
-// body {
-//     background: url("../img/mishka-index-mobile.jpg") no-repeat;
-// }
+body {
+    background: url("../img/mishka-index-mobile.jpg") no-repeat;
+    opacity: 0.2;
+}
 
-// @media (min-width: $tablet-width) {
-//     body {
-//       background: url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
-//     }
-//   }
+@media (min-width: $tablet-width) {
+    body {
+      background: url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
+    }
+  }
 
-// @media (min-width: $desktop-width) {
-//     body {
-//       background: url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
-//     }
-//   }
+@media (min-width: $desktop-width) {
+    body {
+      background: url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
+    }
+  }
 

@@ -1,10 +1,14 @@
-@import "font-face.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "outlines.scss";
-@import "blocks/main-header.scss";
+@import "variables";
+@import "mixins";
+@import "font-face";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "outlines";
+@import "blocks/main-header";
+@import "blocks/product";
+@import "blocks/text-mark";
 
-$list-style: none;
+
 
 body {
     min-width: 320px;
@@ -13,6 +17,8 @@ body {
     font-style: normal;
     font-size: 15px;
     font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
     color: #444444;
 }
 
@@ -23,7 +29,6 @@ img {
 
 .title {
     font-weight: 700px;
-    line-height: 30px;
     color: #010000;
 }
 
