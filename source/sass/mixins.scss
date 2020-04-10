@@ -21,5 +21,9 @@
       color: $color;
   }
 
+@mixin main-margin($margin: 0 30px) {
+    margin: $margin;
+
+}
 // применить к другим местам list вместо переменной
 // применить к другим местам absolute вместо переменной

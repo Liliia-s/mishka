@@ -1,0 +1,32 @@
+.social-list {
+    @include indent;
+    display: flex;
+}
+
+.social__item {
+    @include list;
+}
+
+.social__link {
+    width: 32px;
+    height: 32px;
+    padding: 0px 45px 10px 15px;
+  
+        &--insta {
+            background: url("../../img/icon-insta.svg") no-repeat;
+        }
+
+        &--fb {
+            background: url("../../img/icon-fb.svg") no-repeat;
+        }
+
+
+        &--tw {
+            background: url("../../img/icon-twitter.svg") no-repeat;
+        }
+
+}
+
+// .social__link:not(:last-child) {
+//     padding-right: 42px;
+// }
