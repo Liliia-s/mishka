@@ -12,6 +12,14 @@
     content: "";        
 }
 
+@mixin no-outline {
+    outline: none;
+    background: transparent;
+  }
+
+  @mixin main-color($color: #444444) {
+      color: $color;
+  }
 
 // применить к другим местам list вместо переменной
 // применить к другим местам absolute вместо переменной

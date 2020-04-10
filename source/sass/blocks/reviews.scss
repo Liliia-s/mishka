@@ -1,11 +1,12 @@
 .reviews {
     padding-top: 25px;
+    padding-bottom: 65px;
+}
 
 .reviews__wrapper {
     margin: 0 29px;
 }
 
-}
 .reviews__title {
     @include indent;
     padding-bottom: 24px;
@@ -26,7 +27,6 @@
     padding-bottom: 3px;
     font-style: normal;
     font-size: 17px;
-    line-height: 24px;
     font-weight: $font-weight;
 }
 
@@ -39,7 +39,7 @@
 
 .reviews__arrow-wrapper {
     display: flex;
-    padding-bottom: 43px;
+    margin-bottom: 38px;
 }
 
 .reviews__arrow {
@@ -50,21 +50,46 @@
     border: 1px solid #ececec;
     background-color: transparent;
 
-    &--back::before {
-        @include absolute;
-        background: url("../../img/icon-left-arrow.svg") no-repeat;
-        width: 50px;
-        height: 26px;
-        top: 11px;
-        left: 39px;
+    &--back {
+        &::before {
+            @include absolute;
+            background: url("../../img/icon-left-arrow.svg") no-repeat;
+            width: 50px;
+            height: 26px;
+            top: 11px;
+            left: 39px;
+        }
+
+        &:hover::before {
+            opacity: 0.6;
+        }
+
+        &:active::before {
+            opacity: 0.3;
+        }
     }
 
-    &--next::before {
-        @include absolute;
-        background: url("../../img/icon-right-arrow.svg") no-repeat;
-        width: 50px;
-        height: 26px;
-        top: 11px;
-        left: 39px;
+    &--next {
+        &::before {
+            @include absolute;
+            background: url("../../img/icon-right-arrow.svg") no-repeat;
+            width: 50px;
+            height: 26px;
+            top: 11px;
+            left: 39px;
+        }
+
+        &:hover::before {
+            opacity: 0.6;
+        }
+
+        &:active::before {
+            opacity: 0.3;
+        }
+
     }
+}
+
+.reviews__btn {
+    padding: 14px 81px;
 }

@@ -20,7 +20,7 @@
 .product__text {
     max-width: 250px;
     line-height: 24px;
-    padding-bottom: 9px;
+    padding-bottom: 5px;
 }
 
 .product__table {
@@ -31,11 +31,11 @@
 .product__row {
     display: block;
     border-bottom: 1px solid #ececec;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
 }
 
 .product__row:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .product__table-color {
@@ -51,7 +51,7 @@
 }
 
 .product__wrapper {
-    margin-bottom: 21px;
+    margin-bottom: 19px;
 }
 
 .product__price {
@@ -64,7 +64,6 @@
 }
 
 .product__btn {
-    text-align: center;
     padding: 14px 84px;
 }
 
