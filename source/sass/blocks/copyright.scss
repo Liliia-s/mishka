@@ -6,4 +6,32 @@
     font-size: 19px;
     line-height: 18px;
     padding-right: 30px;
+        
+    // &:active {
+    //     opacity: 0.3;
+    // }
+}
+
+.copyright__logo {
+    position: relative;
+
+    &:hover::before,
+    &:focus::before {
+        content: "";
+        position: absolute;
+        width: 27px;
+        height: 34px;
+        z-index: 1;
+        background: url("../../img/logo-htmlacademy-dark-green.svg") no-repeat;
+    }
+
+    // &:active {
+    //     opacity: 0.3;
+    // }
+}
+
+.page-footer__copyright {
+    &:active {
+        opacity: 0.3;
+    }
 }

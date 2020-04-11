@@ -14,17 +14,42 @@
   
         &--insta {
             background: url("../../img/icon-insta.svg") no-repeat;
+
+            &:hover,
+            &:focus {
+                background: url("../../img/icon-insta-green.svg") no-repeat;
+            }
+            &:active {
+                opacity: 0.3;
+            }
         }
 
         &--fb {
             background: url("../../img/icon-fb.svg") no-repeat;
+
+            &:hover,
+            &:focus {
+                background: url("../../img/icon-fb-green.svg") no-repeat;
+            }
+            &:active {
+                opacity: 0.3;
+            }
+
         }
 
 
         &--tw {
             background: url("../../img/icon-twitter.svg") no-repeat;
-        }
 
+            &:hover,
+            &:focus {
+                background: url("../../img/icon-twitter-green.svg") no-repeat;
+            }
+            &:active {
+                opacity: 0.3;
+            }
+
+        }
 }
 
 // .social__link:not(:last-child) {
