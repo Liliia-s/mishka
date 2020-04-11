@@ -6,9 +6,10 @@
     @include main-margin;
 }
 
-.page-footer__logo {
-    display: none;
-}
+// .page-footer__logo {
+//     // display: none;
+// }
+
 .page-footer__social {
     padding: 22px 50px 32px 57px;
     border-bottom: 1px solid #e5e5e5;
@@ -16,6 +17,27 @@
 
 .page-footer__copyright {
     padding: 29px 40px 16px 38px;
-
 }
 
+
+.page-footer__logo {
+    display: none;
+
+    @media (min-width: $tablet-width), (min-width: $desktop-width) {
+        display: block;
+        position: relative;
+            &:hover::before,
+            &:focus::before {
+                content: "";
+                position: absolute;
+                width: 102px;
+                height: 34px;
+                z-index: 1;
+                background: url("../../img/logo-footer-green.svg") no-repeat;
+            }
+
+            &:active {
+                opacity: 0.3;
+        }
+    }
+}
