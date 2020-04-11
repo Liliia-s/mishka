@@ -45,6 +45,13 @@
     @include main-color;
     padding-bottom: 3px;
     border-bottom: 1px solid #62d1ba;
+        &:hover {
+            color: #62d1ba;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
 }
 
 .contacts__map {
