@@ -3,9 +3,9 @@
     padding-bottom: 52px;
 }
 
-.reviews__wrapper {
-    margin: 0 29px;
-}
+// .reviews__wrapper {
+//     margin: 0 29px;
+// }
 
 .reviews__title {
     @include indent;
@@ -14,6 +14,9 @@
 
 .reviews__item {
     @include indent;
+}
+.reviews__list {
+    padding-bottom: 30px;
 }
 
 .reviews__text {
@@ -34,7 +37,6 @@
     @include indent;
     font-size: 17px;
     line-height: 30px;
-    padding-bottom: 30px;
 }
 
 .reviews__arrow-wrapper {
@@ -88,8 +90,4 @@
         }
 
     }
-}
-
-.reviews__btn {
-    padding: 14px 81px;
 }

@@ -1,8 +1,14 @@
 .main-nav {
     position: relative;
 }
-.main-nav__wrapper {
+.main-nav__list-other,
+.main-nav__list-delivery {
     display: none;
+}
+
+.main-nav__list {
+    @include indent;
+    list-style: none;
 }
 
 .main-nav__toggle {

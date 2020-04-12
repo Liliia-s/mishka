@@ -4,7 +4,7 @@
 
 .copyright__name {
     font-size: 19px;
-    line-height: 18px;
+    line-height: 28px;
     padding-right: 30px;
         
     // &:active {
@@ -13,21 +13,10 @@
 }
 
 .copyright__logo {
-    position: relative;
-
-    &:hover::before,
-    &:focus::before {
-        content: "";
-        position: absolute;
-        width: 27px;
-        height: 34px;
-        z-index: 1;
-        background: url("../../img/logo-htmlacademy-dark-green.svg") no-repeat;
+    &:hover,
+    &:focus {
+        fill: red;
     }
-
-    // &:active {
-    //     opacity: 0.3;
-    // }
 }
 
 .page-footer__copyright {

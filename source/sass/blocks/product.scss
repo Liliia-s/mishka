@@ -1,6 +1,5 @@
 .product {
     position: relative;
-    margin: 0 30px;
     padding-top: 27px;
     padding-bottom: 20px;
 }
@@ -14,44 +13,49 @@
 
 .product__week {
     margin: 0;
-    padding-bottom: 8px;
+    padding-bottom: 23px;
 }
 
 .product__text {
-    max-width: 250px;
+    @include indent;
     line-height: 24px;
-    padding-bottom: 5px;
+    padding-bottom: 16px;
 }
 
 .product__table {
     @include indent;
+    width: 100%;
     margin-bottom: 26px;
+    border-collapse: collapse;
 }
  
 .product__row {
-    display: block;
     border-bottom: 1px solid #ececec;
     padding-bottom: 4px;
 }
 
 .product__row:not(:last-child) {
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
 }
 
-.product__table-color {
-    padding: 0 61px 0 0;
+.product__table-field {
+    padding: 0 12px 0 0;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
 }
 
-.product__table-dia {
-    padding-right: 31px;
-}
-
-.product__table-height {
-    padding-right: 45px;
+.product__table-value {
+    line-height: 38px;
 }
 
 .product__wrapper {
     margin-bottom: 19px;
+}
+
+.product__image-wrapper {
+    margin-bottom: 19px;
+    text-align: center;
 }
 
 .product__price {
@@ -62,8 +66,3 @@
     text-align: center;
     padding-bottom: 26px;
 }
-
-.product__btn {
-    padding: 14px 84px;
-}
-
