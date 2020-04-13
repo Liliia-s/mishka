@@ -1,11 +1,10 @@
 
-.page-header {
+.page-header__wrapper {
     display: flex;
     padding: 22px 0 16px 0;
 }
 
 .page-header__logo {
-    display: block;
     margin: auto; 
     // padding: 3px 0 0 15px;
 }
@@ -17,3 +16,21 @@
 //     }
 //  }
 
+
+// .page-header__toggle::before {
+//     position: absolute;
+//     content: "";
+//     background: url("../../img/icon-menu-open.svg") no-repeat;
+//     top: 12px;
+//     right: 0;
+//     width: 20px;
+//     height: 14px;
+// }
+
+.page-header__toggle {
+    padding-top: 30px;
+    width: 22px;
+    height: 20px;
+    background: url("../../img/icon-menu-open.svg") no-repeat 50% 50%;
+    border: none;
+}
