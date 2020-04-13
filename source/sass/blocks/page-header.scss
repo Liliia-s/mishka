@@ -1,12 +1,13 @@
 
 .page-header__wrapper {
     display: flex;
-    padding: 22px 0 16px 0;
+    padding-top: 22px;
+    padding-bottom: 16px;
 }
 
 .page-header__logo {
     margin: auto; 
-    // padding: 3px 0 0 15px;
+    padding-left: 20px;
 }
 
 
@@ -28,9 +29,10 @@
 // }
 
 .page-header__toggle {
-    padding-top: 30px;
+    padding-top: 34px;
     width: 22px;
     height: 20px;
-    background: url("../../img/icon-menu-open.svg") no-repeat 50% 50%;
+    background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;
+    // background: url("../../img/icon-menu-open.svg") no-repeat 50% 50%;
     border: none;
 }

@@ -20,7 +20,10 @@
 .main-nav__item-form,
 .main-nav__item-search,
 .main-nav__item-basket {
-    padding: 27px 15px 27px 45px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 76px;
+    // padding: 27px 15px 27px 76px;
 }
 
 .main-nav__item {
