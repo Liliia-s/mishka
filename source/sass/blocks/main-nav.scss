@@ -32,4 +32,13 @@
 
 .main-nav__link {
     color: #000000;
+
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
 }
