@@ -35,10 +35,10 @@
 
     &:hover,
     &:focus {
-        opacity: 0.6;
+        color: rgba(0, 0, 0, 0.6);
     }
 
     &:active {
-        opacity: 0.3;
+        color: rgba(0, 0, 0, 0.3);
     }
 }
