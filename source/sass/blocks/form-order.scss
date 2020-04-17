@@ -1,0 +1,189 @@
+.form-order {
+    padding-top: 22px;
+    padding-bottom: 54px;
+}
+
+.form-order__wrapper {
+    @include indent;
+}
+
+.form-order__header {
+    @include indent;
+    padding-bottom: 24px;
+    font-size: 13px;
+}
+
+.form-order__type {
+    padding-bottom: 44px;
+}
+
+.form-order__field {
+    position: relative;
+    border: none;
+}
+
+.form-order__field::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 30px;
+    width: 198px;
+    height: 1px;
+    background-color: #62d1ba;
+}
+
+.form-order__legend {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #62d1ba;
+}
+
+.form-order__legend-type {
+    padding-bottom: 34px;
+}
+
+.form-order__item {
+    position: relative;
+    display: block;
+    padding-left: 62px;
+    font-size: 17px;
+    font-weight: $font-weight;
+    line-height: 18px;
+    color: #000000;
+}
+
+.form-order__type-input + .form-order__type-item::before {
+    position: absolute;
+    content: "";
+    top: -9px;
+    left: 0px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+    border-radius: 50px;
+}
+
+.form-order__type-input:checked + .form-order__type-item::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    border: 8px solid #62d1ba;
+    border-radius: 50px;
+}
+
+.form-order__type-item:not(:last-child) {
+    padding-bottom: 24px;
+}
+
+.form-order__legend-color {
+    padding-bottom: 36px;
+}
+
+.form-order__color {
+    @include indent;
+    padding-bottom: 42px;
+} 
+
+.form-order__color-item:not(:last-child) {
+    padding-bottom: 43px;
+}
+
+.form-order__color-item {
+    position: relative;
+}
+
+.form-order__color-input + .form-order__color-item::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+}
+
+.form-order__color-input:checked + .form-order__color-item::after {
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: 9px;
+    width: 22px;
+    height: 16px;
+    background: url("../../img/icon-tick.svg") no-repeat;
+}
+
+.form-order__person {
+    padding-bottom: 31px;
+}
+
+.form-order__legend-person {
+    padding-bottom: 30px;
+}
+
+.form-order__person-item {
+    padding-left: 0;
+}
+
+.form-order__text-input {
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.form-order__person-input:not(:last-child) {
+    margin-bottom: 21px;
+}
+
+.form-order__text-input {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.form-order__tel {
+    padding-bottom: 32px;
+}
+
+.form-order__legend-tel,
+.form-order__legend-email {
+    padding-bottom: 6px;
+}
+
+.form-order__tel-input {
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.form-order__email {
+    padding-bottom: 32px;
+}
+
+.form-order__comment {
+    padding-bottom: 11px;
+}
+
+.form-order__legend-comment {
+    padding-bottom: 25px;
+}
+
+.form-order__comment-item {
+    min-height: 142px;
+    padding: 15px;
+    line-height: 18px;
+    border: 2px solid #000;
+}
+
+.form-order__info {
+    @include indent;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px;
+}
+

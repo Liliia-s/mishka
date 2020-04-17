@@ -1,4 +1,5 @@
 .catalog-products {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -10,5 +11,5 @@
 }
 
 .catalog-products__item:not(:last-child) {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
