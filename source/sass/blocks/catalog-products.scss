@@ -6,8 +6,7 @@
 .catalog-products__list {
     display: flex;
     flex-direction: column;
-    @include indent;
-    list-style: $list-style;
+    @include reset-list;
 }
 
 .catalog-products__item:not(:last-child) {

@@ -4,17 +4,27 @@
 }
 
 .form-order__header {
-    @include indent;
+    @include reset-indent;
     padding-bottom: 24px;
     font-size: 13px;
 }
 
-.form-order__type {
-    padding-bottom: 44px;
+.form-order__type-wrapper {
+    padding-bottom: 43px;
 }
 
 .form-order__field {
+    @include reset-indent;
     border: none;
+    border-top: 1px solid $color-mint;
+}
+
+.form-order__field--type {
+    padding-top: 34px;
+}
+
+.form-order__legend--type {
+    padding-right: 27px;
 }
 
 .form-order__legend {
@@ -23,28 +33,7 @@
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
-    color: $mint;
-
-    &::before {
-        position: absolute;
-        content: "";
-        top: 8px;
-        left: 62px;
-        width: 198px;
-        height: 1px;
-        background-color: $mint;
-    }
-}
-
-.form-order__legend-email {
-    &::before {
-        left: 80px;
-        width: 179px;
-    }
-}
-
-.form-order__legend-type {
-    padding-bottom: 34px;
+    color: $color-mint;
 }
 
 .form-order__item {
@@ -52,12 +41,12 @@
     display: block;
     padding-left: 62px;
     font-size: 17px;
-    font-weight: $font-weight;
+    font-weight: $font-weight-bold;
     line-height: 18px;
-    color: $black;
+    color: $color-black;
 }
 
-.form-order__type-input + .form-order__type-item {
+.form-order__type-input + .form-order__type--item {
     &::before {
         position: absolute;
         content: "";
@@ -66,25 +55,25 @@
         display: block;
         width: 40px;
         height: 40px;
-        border: 2px solid $main-color;
+        border: 2px solid $color-dark-grey;
         border-radius: 50px;
     }   
 
     &:hover::before,
     &:focus::before {
-        border-color: $mint;
+        border-color: $color-mint;
     }
 
     &:active::before {
-        border-color: rgba($main-color, $alpha: 0.3);
+        border-color: rgba($color-dark-grey, 0.3);
     }
 }
 
-.form-order__type-input:disabled + .form-order__type-item::before {
-    border-color: rgba($main-color, $alpha: 0.3);
+.form-order__type-input:disabled + .form-order__type--item::before {
+    border-color: rgba($color-dark-grey, 0.3);
 }
 
-.form-order__type-input:checked + .form-order__type-item {
+.form-order__type-input:checked + .form-order__type--item {
     &::after {
         position: absolute;
         content: "";
@@ -92,37 +81,41 @@
         left: 12px;
         width: 15px;
         height: 15px;
-        border: 8px solid $mint;
+        border: 8px solid $color-mint;
         border-radius: 50px;
     }
 }
 
-.form-order__type-input:disabled + .form-order__type-item::after {
-    border-color: rgba($main-color, $alpha: 0.3);
+.form-order__type-input:disabled + .form-order__type--item::after {
+    border-color: rgba($color-dark-grey, 0.3);
 }
 
-
-.form-order__type-item:not(:last-child) {
+.form-order__type--item:not(:last-child) {
+    min-height: 60px;
     padding-bottom: 24px;
 }
 
-.form-order__legend-color {
-    padding-bottom: 36px;
+.form-order__color-wrapper {
+    padding-bottom: 42px;
 }
 
-.form-order__color {
-    padding-bottom: 42px;
+.form-order__legend--color {
+    padding-right: 18px;
+}
+
+.form-order__field--color {
+    padding-top: 37px;
 } 
 
-.form-order__color-item:not(:last-child) {
+.form-order__item--color:not(:last-child) {
     padding-bottom: 43px;
 }
 
-.form-order__color-item {
+.form-order__item--color {
     position: relative;
 }
 
-.form-order__color-input + .form-order__color-item {
+.form-order__color-input + .form-order__item--color {
     &::before {
         position: absolute;
         content: "";
@@ -130,24 +123,24 @@
         left: 0px;
         width: 40px;
         height: 40px;
-        border: 2px solid $main-color;
+        border: 2px solid $color-dark-grey;
     }
 
     &:hover::before,
     &:focus::before {
-        border-color: $mint;
+        border-color: $color-mint;
     }
 
     &:active::before {
-        border-color: rgba($main-color, $alpha: 0.3);
+        border-color: rgba($color-dark-grey, 0.3);
     }
 }
 
-.form-order__color-input:disabled + .form-order__color-item::before {
-    border-color: rgba($main-color, $alpha: 0.3);
+.form-order__color-input:disabled + .form-order__item--color::before {
+    border-color: rgba($color-dark-grey, 0.3);
 }
 
-.form-order__color-input:checked + .form-order__color-item {
+.form-order__color-input:checked + .form-order__item--color {
     &::after {
         position: absolute;
         content: "";
@@ -159,19 +152,23 @@
     }
 }
 
-.form-order__color-input:disabled + .form-order__color-item::after {
+.form-order__color-input:disabled + .form-order__item--color::after {
     opacity: 0.3;
 }
 
-.form-order__person {
+.form-order__person-wrapper {
     padding-bottom: 31px;
 }
 
-.form-order__legend-person {
-    padding-bottom: 30px;
+.form-order__field--person {
+    padding-top: 28px;
 }
 
-.form-order__person-item {
+.form-order__legend--person {
+    padding-right: 22px;
+}
+
+.form-order__item--person {
     padding-left: 0;
 }
 
@@ -180,62 +177,74 @@
     padding: 14px 0;
     font-size: 17px;
     line-height: 22px;
-    color: $main-color;
+    color: $color-dark-grey;
     background: transparent;
     border: none;
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $color-black;
     outline: none;
 
     &:hover,
     &:focus,
     &:active {
-        border-color: $mint;
+        border-color: $color-mint;
     }
 }
 
 .form-order__text-input::placeholder {
-    color: rgba($main-color, $alpha: 0.3);
+    color: rgba($color-dark-grey, 0.3);
 }
 
-.form-order__person-input:not(:last-child) {
-    margin-bottom: 21px;
+.form-order__text-input--person:not(:last-child) {
+    margin-bottom: 22px;
 }
 
-.form-order__tel {
+.form-order__contacts-wrapper {
     padding-bottom: 32px;
 }
 
-.form-order__legend-tel,
-.form-order__legend-email {
-    padding-bottom: 6px;
+.form-order__field--tel {
+    padding-top: 6px;
+    padding-bottom: 32px;
 }
 
-.form-order__tel-input {
+.form-order__legend--tel {
+    padding-right: 31px;
+}
+
+.form-order__text-input--tel {
     font-size: 19px;
     line-height: 24px;
 }
 
-.form-order__email {
-    padding-bottom: 32px;
+.form-order__legend--email {
+    padding-right: 23px;
 }
 
-.form-order__comment {
-    padding-bottom: 11px;
+.form-order__field--email {
+    padding-top: 7px;
 }
 
-.form-order__legend-comment {
-    padding-bottom: 25px;
+.form-order__comment-wrapper {
+    padding-bottom: 10px;
 }
 
-.form-order__comment-item {
+.form-order__field--comment {
+    padding-top: 25px;
+}
+
+.form-order__legend--comment {
+    padding-right: 25px;
+}
+
+.form-order__text-input--comment {
     min-height: 142px;
     padding: 15px;
     line-height: 18px;
-    border: 2px solid $black;
+    border: 2px solid $color-black;
 }
 
 .form-order__info {
-    @include indent;
+    @include reset-indent;
     padding-bottom: 32px;
     font-size: 14px;
     line-height: 16px;

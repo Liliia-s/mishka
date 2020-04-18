@@ -8,19 +8,19 @@
 // }
 
 .reviews__title {
-    @include indent;
+    @include reset-indent;
     padding-bottom: 24px;
 }
 
 .reviews__item {
-    @include indent;
+    @include reset-indent;
 }
 .reviews__list {
     padding-bottom: 30px;
 }
 
 .reviews__text {
-    @include indent;
+    @include reset-indent;
     line-height: 30px;
     padding-bottom: 27px;
 }
@@ -30,11 +30,11 @@
     padding-bottom: 3px;
     font-style: normal;
     font-size: 17px;
-    font-weight: $font-weight;
+    font-weight: $font-weight-bold;
 }
 
 .reviews__user-nick {
-    @include indent;
+    @include reset-indent;
     font-size: 17px;
     line-height: 30px;
 }
@@ -45,12 +45,12 @@
 }
 
 .reviews__arrow {
-    @include indent;
+    @include reset-indent;
     position: relative;
     // width: 130px;
     width: 100%;
     height: 50px;
-    border: 1px solid #ececec;
+    border: 1px solid $color-light-grey;
     background-color: transparent;
     outline: none;
 

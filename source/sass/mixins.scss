@@ -1,29 +1,35 @@
-@mixin indent {
+@mixin reset-indent {
     margin: 0;
     padding: 0;
 }
 
-@mixin list {
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-@mixin absolute {
-    position: absolute;
-    content: "";        
-}
 
-@mixin no-outline {
-    outline: none;
-    background: transparent;
-  }
+// @mixin list {
+//     list-style: none;
+// }
 
-  @mixin main-color($color: #444444) {
-      color: $color;
-  }
 
-@mixin main-margin($margin: 0 30px) {
-    margin: $margin;
+// @mixin absolute {
+//     position: absolute;
+//     content: "";        
+// }
 
-}
+// @mixin no-outline {
+//     outline: none;
+//     background: transparent;
+// }
+
+// @mixin main-margin($margin: 0 30px) {
+//     margin: $margin;
+// }
+
+
+
 // применить к другим местам list вместо переменной
 // применить к другим местам absolute вместо переменной

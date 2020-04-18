@@ -5,16 +5,16 @@
 
 .video__wrapper {
     padding-top: 97px;
-    border: 1px solid #ececec;
+    border: 1px solid $color-light-grey;
 }
 
 .video__title {
     position: absolute;
     top: 25px;
     left: 119px;
-    @include indent;
+    @include reset-indent;
     font-size: 17px;
-    font-weight: $font-weight;
+    font-weight: $font-weight-bold;
 }
 
 .video__wrapper-image {
@@ -44,7 +44,7 @@
 }
 
 .video__desc {
-    @include indent;
+    @include reset-indent;
     padding-bottom: 25px;
     font-size: 13px;
 }

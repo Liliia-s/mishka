@@ -5,40 +5,34 @@
 .main-nav__list {
     display: flex;
     flex-direction: column;
-    @include indent;
-    list-style: none;
+    @include reset-list;
     font-size: 17px;
-    font-weight: $font-weight;
+    font-weight: $font-weight-bold;
 }
 
-.main-nav__list-other,
-.main-nav__list-delivery {
+.main-nav__list--other,
+.main-nav__list--delivery {
     display: none;
 }
 
-.main-nav__item-catalog,
-.main-nav__item-form,
-.main-nav__item-search,
-.main-nav__item-basket {
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 76px;
-    // padding: 27px 15px 27px 76px;
+.main-nav__link {
+    display: block;
+    padding: 27px 10px 27px 45px;
 }
 
 .main-nav__item {
-    border-top: 1px solid #ececec;
+    border-top: 1px solid $color-light-grey;
 }
 
 .main-nav__link {
-    color: #000000;
+    color: $color-black;
 
     &:hover,
     &:focus {
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba($color-black, 0.6);
     }
 
     &:active {
-        color: rgba(0, 0, 0, 0.3);
+        color: rgba($color-black, 0.3);
     }
 }

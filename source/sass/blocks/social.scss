@@ -1,10 +1,6 @@
 .social__list {
-    @include indent;
+    @include reset-list;
     display: flex;
-}
-
-.social__item {
-    @include list;
 }
 
 .social__link {

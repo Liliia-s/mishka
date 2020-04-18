@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-    @include main-margin;
+    margin: 0 30px;
 }
 
 // .page-footer__logo {
@@ -23,7 +23,7 @@
 .page-footer__logo {
     display: none;
 
-    @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
         display: block;
         position: relative;
             &:hover::before,

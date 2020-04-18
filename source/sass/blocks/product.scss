@@ -17,20 +17,20 @@
 }
 
 .product__text {
-    @include indent;
+    @include reset-indent;
     line-height: 24px;
     padding-bottom: 16px;
 }
 
 .product__table {
-    @include indent;
+    @include reset-indent;
     width: 100%;
     margin-bottom: 26px;
     border-collapse: collapse;
 }
  
 .product__row {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $color-light-grey;
     padding-bottom: 4px;
 }
 
@@ -59,10 +59,10 @@
 }
 
 .product__price {
-    @include indent;
+    @include reset-indent;
     font-size: 17px;
     line-height: 24px;
-    font-weight: $font-weight;
+    font-weight: $font-weight-bold;
     text-align: center;
     padding-bottom: 26px;
 }
