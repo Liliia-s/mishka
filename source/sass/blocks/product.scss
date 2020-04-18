@@ -28,14 +28,10 @@
     margin-bottom: 26px;
     border-collapse: collapse;
 }
- 
+
 .product__row {
     border-bottom: 1px solid $color-light-grey;
     padding-bottom: 4px;
-}
-
-.product__row:not(:last-child) {
-    // margin-bottom: 5px;
 }
 
 .product__table-field {

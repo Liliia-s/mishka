@@ -16,14 +16,14 @@
     .main-header__title {
         font-size: 43px;
         line-height: 50px;
-    }  
+  }
 }
 
 @media (min-width: $desktop-width) {
     .main-header__title {
         font-size: 53px;
         line-height: 57px;
-    }  
+  }
 }
 
 .main-header__category {
@@ -60,7 +60,7 @@
             right: 37px;
             width: 40px;
             height: 62px;
-            opacity: 0.5;        
+            opacity: 0.5;
         }
     }
 
@@ -80,8 +80,6 @@
         }
     }
 }
-
-
 
 // .main-header__category-link--interior {
 //     background-color: #63d1bb;
