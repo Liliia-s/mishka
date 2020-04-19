@@ -1,76 +1,78 @@
 .reviews {
-    padding-top: 25px;
-    padding-bottom: 52px;
+  padding-top: 25px;
+  padding-bottom: 52px;
 }
 
 .reviews__title {
-    @include reset-indent;
-    padding-bottom: 24px;
+  @include reset-indent;
+  padding-bottom: 24px;
 }
 
 .reviews__item {
-    @include reset-indent;
+  @include reset-indent;
 }
+
 .reviews__list {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .reviews__text {
-    @include reset-indent;
-    line-height: 30px;
-    padding-bottom: 27px;
+  @include reset-indent;
+  line-height: 30px;
+  padding-bottom: 27px;
 }
 
 .reviews__user-name {
-    display: inline-block;
-    padding-bottom: 3px;
-    font-style: normal;
-    font-size: 17px;
-    font-weight: $font-weight-bold;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: $font-weight-bold;
 }
 
 .reviews__user-nick {
-    @include reset-indent;
-    font-size: 17px;
-    line-height: 30px;
+  @include reset-indent;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .reviews__arrow-wrapper {
-    display: flex;
-    padding-bottom: 38px;
+  display: flex;
+  padding-bottom: 38px;
 }
 
 .reviews__arrow {
-    @include reset-indent;
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border: 1px solid $color-light-grey;
-    background-color: transparent;
-    outline: none;
+  @include reset-indent;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: 1px solid $color-light-grey;
+  background-color: transparent;
+  outline: none;
 
-    &--back {
-      background: url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
-      &:hover,
-      &:focus {
-          opacity: 0.6;
-      }
+  &--back {
+    background: url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
 
-      &:active {
-          opacity: 0.3;
-      }
+    &:hover,
+    &:focus {
+      opacity: 0.6;
     }
 
-    &--next {
-      background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
-
-      &:hover,
-      &:focus {
-          opacity: 0.6;
-      }
-
-      &:active {
-          opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
     }
+  }
+
+  &--next {
+    background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

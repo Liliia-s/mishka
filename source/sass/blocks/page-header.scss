@@ -1,13 +1,13 @@
 
 .page-header__wrapper {
-    display: flex;
-    padding-top: 22px;
-    padding-bottom: 16px;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 16px;
 }
 
 .page-header__logo {
-    margin: auto;
-    padding-left: 20px;
+  margin: auto;
+  padding-left: 20px;
 }
 
 
@@ -29,10 +29,10 @@
 // }
 
 .page-header__toggle {
-    padding-top: 34px;
-    width: 22px;
-    height: 20px;
-    background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;
-    // background: url("../../img/icon-menu-open.svg") no-repeat 50% 50%;
-    border: none;
+  padding-top: 34px;
+  width: 22px;
+  height: 20px;
+  background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;
+  // background: url("../../img/icon-menu-open.svg") no-repeat 50% 50%;
+  border: none;
 }

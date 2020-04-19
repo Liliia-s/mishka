@@ -1,14 +1,14 @@
 .catalog-products {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .catalog-products__list {
-    display: flex;
-    flex-direction: column;
-    @include reset-list;
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-products__item:not(:last-child) {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }

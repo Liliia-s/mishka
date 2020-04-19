@@ -1,47 +1,49 @@
 .social__list {
-    @include reset-list;
-    display: flex;
+  @include reset-list;
+  display: flex;
 }
 
 .social__link {
-    width: 32px;
-    height: 32px;
-    padding: 0px 45px 10px 15px;
-        &--insta {
-            background: url("../../img/icon-insta.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  padding: 0 45px 10px 15px;
 
-            &:hover,
-            &:focus {
-                background: url("../../img/icon-insta-green.svg") no-repeat;
-            }
-            &:active {
-                opacity: 0.3;
-            }
-        }
+  &--insta {
+    background: url("../../img/icon-insta.svg") no-repeat;
 
-        &--fb {
-            background: url("../../img/icon-fb.svg") no-repeat;
+    &:hover,
+    &:focus {
+      background: url("../../img/icon-insta-green.svg") no-repeat;
+    }
 
-            &:hover,
-            &:focus {
-                background: url("../../img/icon-fb-green.svg") no-repeat;
-            }
-            &:active {
-                opacity: 0.3;
-            }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
-        }
+  &--fb {
+    background: url("../../img/icon-fb.svg") no-repeat;
 
-        &--tw {
-            background: url("../../img/icon-twitter.svg") no-repeat;
+    &:hover,
+    &:focus {
+      background: url("../../img/icon-fb-green.svg") no-repeat;
+    }
 
-            &:hover,
-            &:focus {
-                background: url("../../img/icon-twitter-green.svg") no-repeat;
-            }
-            &:active {
-                opacity: 0.3;
-            }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
-        }
+  &--tw {
+    background: url("../../img/icon-twitter.svg") no-repeat;
+
+    &:hover,
+    &:focus {
+      background: url("../../img/icon-twitter-green.svg") no-repeat;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
