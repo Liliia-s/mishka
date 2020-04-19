@@ -1,0 +1,22 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-dark-grey;
+    border: 2px solid $color-dark-grey;
+    background-color: transparent;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-dark-grey;
+    }
+
+    &:active {
+        color: rgba($color-white, 0.3);
+    }
+}

@@ -1,0 +1,38 @@
+.main-nav {
+    position: relative;
+}
+
+.main-nav__list {
+    display: flex;
+    flex-direction: column;
+    @include reset-list;
+    font-size: 17px;
+    font-weight: $font-weight-bold;
+}
+
+.main-nav__list--other,
+.main-nav__list--delivery {
+    display: none;
+}
+
+.main-nav__link {
+    display: block;
+    padding: 27px 0px 27px 45px;
+}
+
+.main-nav__item {
+    border-top: 1px solid $color-light-grey;
+}
+
+.main-nav__link {
+    color: $color-black;
+
+    &:hover,
+    &:focus {
+        color: rgba($color-black, 0.6);
+    }
+
+    &:active {
+        color: rgba($color-black, 0.3);
+    }
+}

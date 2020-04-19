@@ -1,0 +1,11 @@
+.inner-header {
+    border-top: 1px solid $color-light-grey;
+    background-color: #f1f1f1;
+}
+
+.inner-header__title {
+    @include reset-indent;
+    padding-top: 71px;
+    padding-bottom: 75px;
+    text-align: center;
+}
