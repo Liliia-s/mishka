@@ -1,5 +1,22 @@
-.main-nav {
+.main-nav_wrapper-logo {
   position: relative;
+  padding-top: 22px;
+  padding-bottom: 14px;
+}
+
+.main-nav__logo {
+  display: block;
+  text-align: center;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 21px;
+  width: 40px;
+  height: 30px;
+  background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;
+  border: none;
 }
 
 .main-nav__list {
@@ -32,4 +49,122 @@
 
 .main-nav__item {
   border-top: 1px solid $color-light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__link {
+    @include reset-indent;
+  }
+
+  .main-nav__item {
+    @include reset-indent;
+    width: auto;
+    border: none;
+  }
+
+  .main-nav__wrapper {
+    padding-top: 22px;
+  }
+
+  .main-nav__logo {
+    text-align: justify;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list--box {
+    padding-top: 17px;
+    padding-left: 50px;
+    padding-right: 18px;
+    border-top: 1px solid $color-light-grey;
+  }
+
+  .main-nav__item-user {
+    padding-right: 36px;
+  }
+
+  .main-nav__list--user {
+    padding: 31px 50px 33px 0;
+  }
+
+  .main-nav__link--basket {
+    position: relative;
+    padding-left: 60px;
+  }
+
+  .main-nav__link--basket::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 8px;
+    width: 20px;
+    height: 19px;
+    background: url("../../img/icon-cart.svg") no-repeat;
+  }
+
+  .main-nav__list--box,
+  .main-nav__list--delivery {
+    font-size: 15px;
+    background-color: #f9f9f9;
+  }
+
+  .main-nav__link--loupe {
+    position: relative;
+    font-size: 0;
+  }
+
+  .main-nav__link--loupe::before {
+    position: absolute;
+    top: 6px;
+    left: -73px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../../img/icon-search.svg") no-repeat;
+  }
+
+  .main-nav__item--loupe {
+    margin-left: auto;
+  }
+
+  .main-nav__list--delivery {
+    display: flex;
+    padding-top: 17px;
+    padding-right: 50px;
+    font-weight: 400;
+    border-top: 1px solid $color-light-grey;
+  }
+
+  .main-nav__item--delivery {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list--other {
+    display: flex;
+  }
+
+  .main-nav {
+    position: relative;
+  }
+
+  .main-nav_wrapper-logo {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 355px;
+  }
+
 }
