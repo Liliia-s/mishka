@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 22px;
   padding-bottom: 14px;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__logo {
@@ -48,22 +49,31 @@
 }
 
 .main-nav__item {
-  border-top: 1px solid $color-light-grey;
+  border-bottom: 1px solid $color-light-grey;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    background-image: linear-gradient($color-white 0, $color-white 69%, #e7e7e7 69%, #e7e7e7 69%, #fafafa 70%);
+    // to right,#dcdcdc 0,#dcdcdc 38%,#ebebeb 38%,#ebebeb 100%);
+  }
+
+  .main-nav_wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1150px;
+    width: 100%;
   }
 
   .main-nav__list {
     flex-direction: row;
   }
 
-  .main-nav__link {
-    @include reset-indent;
-  }
+  // .main-nav__link {
+  //   @include reset-indent;
+  // }
 
   .main-nav__item {
     @include reset-indent;
@@ -71,8 +81,10 @@
     border: none;
   }
 
-  .main-nav__wrapper {
-    padding-top: 22px;
+  .main-nav_wrapper-logo {
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
   }
 
   .main-nav__logo {
@@ -84,30 +96,40 @@
   }
 
   .main-nav__list--box {
-    padding-top: 17px;
-    padding-left: 50px;
-    padding-right: 18px;
-    border-top: 1px solid $color-light-grey;
+    // padding-top: 17px;
+    // padding-left: 50px;
+    // padding-right: 18px;
+    // border-top: 1px solid $color-light-grey;
   }
 
-  .main-nav__item-user {
-    padding-right: 36px;
+  // .main-nav__item-user {
+  //   padding-right: 36px;
+  // }
+
+  // .main-nav__list--user {
+  //   padding-right: 50px;
+  // }
+
+  .main-nav__link--catalog {
+    padding: 18px 36px 0 0;
   }
 
-  .main-nav__list--user {
-    padding: 31px 50px 33px 0;
+  .main-nav__link--order {
+    margin-right: auto;
+    padding: 18px 0 0;
   }
 
   .main-nav__link--basket {
     position: relative;
-    padding-left: 60px;
+    padding-top: 31px;
+    padding-left: 83px;
   }
 
   .main-nav__link--basket::before {
     position: absolute;
     content: "";
-    top: 3px;
-    left: 8px;
+    top: 35px;
+    left: 31px;
     width: 20px;
     height: 19px;
     background: url("../../img/icon-cart.svg") no-repeat;
@@ -116,34 +138,36 @@
   .main-nav__list--box,
   .main-nav__list--delivery {
     font-size: 15px;
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
+  }
+
+  .main-nav__item--loupe {
+    margin-left: auto;
+    border-right: 1px solid $color-light-grey;
+    border-left: 1px solid $color-light-grey;
   }
 
   .main-nav__link--loupe {
     position: relative;
+    padding: 50px 31px 14px 51px;
     font-size: 0;
   }
 
   .main-nav__link--loupe::before {
     position: absolute;
-    top: 6px;
-    left: -73px;
+    top: 37px;
+    left: 33px;
     content: "";
     width: 18px;
     height: 18px;
     background: url("../../img/icon-search.svg") no-repeat;
   }
 
-  .main-nav__item--loupe {
-    margin-left: auto;
-  }
-
   .main-nav__list--delivery {
     display: flex;
-    padding-top: 17px;
-    padding-right: 50px;
+    padding-top: 18px;
     font-weight: 400;
-    border-top: 1px solid $color-light-grey;
+    // border-top: 1px solid $color-light-grey;
   }
 
   .main-nav__item--delivery {
@@ -152,19 +176,57 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__list--other {
-    display: flex;
-  }
-
   .main-nav {
     position: relative;
   }
 
   .main-nav_wrapper-logo {
+    @include reset-indent;
     position: absolute;
     content: "";
-    top: 5px;
-    left: 355px;
+    // top: 8px;
+    // left: 500px;
+    top: 8px;
+    left: 0;
+    right: 0;
+    width: 149px;
+    margin: 0 auto;
   }
 
+  .main-nav__list--box {
+    font-size: 17px;
+    background-color: transparent;
+    // border-top: none;
+  }
+
+  .main-nav__item-user {
+    border-right: 1px solid $color-light-grey;
+  }
+
+  .main-nav__link--catalog {
+    padding-top: 31px;
+    padding-bottom: 33px;
+  }
+
+  .main-nav__link--order {
+    padding-top: 31px;
+    padding-left: 34px;
+    padding-bottom: 33px;
+  }
+
+  .main-nav__list--other {
+    display: flex;
+    font-size: 15px;
+    // background-color: #f9f9f9;
+    // border-top: 1px solid $color-light-grey;
+  }
+
+  .main-nav__link--new {
+    padding: 18px 62px 0 0;
+  }
+
+  .main-nav__link--sale {
+    margin-right: auto;
+    padding: 18px 0 0;
+  }
 }
