@@ -56,86 +56,108 @@
       </div>
     </div>
     <article class="product container">
-      <h2 class="product__title title">Вязаные корзинки</h2>
-      <p class="product__week text-mark">Товар недели</p>
+      <div class="product__title-wrapper">
+        <h2 class="product__title title">Вязаные корзинки</h2>
+        <p class="product__week text-mark">Товар недели</p>
+      </div>
       <div class="product__wrapper">
-        <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-          размерах.</p>
-        <table class="product__table">
-          <tr class="product__row">
-            <th class="product__table-field">Цвет:</th>
-            <td class="product__table-value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="product__row">
-            <th class="product__table-field">Диаметр:</th>
-            <td class="product__table-value">25 см</td>
-          </tr>
-          <tr class="product__row">
-            <th class="product__table-field">Высота:</th>
-            <td class="product__table-value">15 см</td>
-          </tr>
-        </table>
-        <div class="product__image-wrapper">
-          <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзинка">
+        <div class="product__text-wrapper">
+          <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
+          <table class="product__table">
+            <tr class="product__row">
+              <th class="product__table-field">Цвет:</th>
+              <td class="product__table-value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="product__row">
+              <th class="product__table-field">Диаметр:</th>
+              <td class="product__table-value">25 см</td>
+            </tr>
+            <tr class="product__row">
+              <th class="product__table-field">Высота:</th>
+              <td class="product__table-value">15 см</td>
+            </tr>
+          </table>
         </div>
-        <p class="product__price">Цена: 990 руб.</p>
-        <button class="product__btn btn" type="button">Заказать</button>
+        <div class="product__image-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка">
+          </picture>
+        </div>
+        <div class="product__price-wrapper">
+          <p class="product__price">Цена: 990 руб.</p>
+          <button class="product__btn btn" type="button">Заказать</button>
+        </div>
       </div>
 
     </article>
     <section class="about-us container">
       <h2 class="about-us__title title">Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__item about-us__item--material">Экологически <br> чистые материалы</li>
-        <li class="about-us__item about-us__item--style">Скандинавский стиль <br> по российской цене</li>
-        <li class="about-us__item about-us__item--like">Увеличивает лайки <br> на фотографиях</li>
-        <li class="about-us__item about-us__item--love">Связано вручную с <br> любовью и умилением</li>
-        <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
-        <li class="about-us__item about-us__item--pack">Поставляется в <br> подарочной упаковке</li>
-      </ul>
+      <div class="about-us__list">
+        <ul class="about-us__list-item">
+          <li class="about-us__item about-us__item--material">Экологически <br> чистые материалы</li>
+          <li class="about-us__item about-us__item--style">Скандинавский стиль <br> по российской цене</li>
+          <li class="about-us__item about-us__item--like">Увеличивает лайки <br> на фотографиях</li>
+        </ul>
+        <ul class="about-us__list-item">
+          <li class="about-us__item about-us__item--love">Связано вручную с <br> любовью и умилением</li>
+          <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--pack">Поставляется в <br> подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <section class="reviews">
       <div class="slider container">
-        <h2 class="reviews__title title">Отзывы</h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__user-name">Анастасия Красильникова</cite>
-            <p class="reviews__user-nick">@misssssiskras</p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Очень ценю качественные и продуманные подарки, сделанные с душой, поэтому люблю дарить друзьм и коллегам подарочки ручной работы. Больше всего мне нравятся вязаные вещи для интерьера дома: они стильно украшают квартиру и создают особый домашний уют и атмосферу. Это прекрасные и качественные товары российского производства из экологически чистых материалов.</p>
-            <cite class="reviews__user-name">Екатерина Бонд</cite>
-            <p class="reviews__user-nick">@lady_bond</p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Очень люблю вязать детские игрушки и одежду для своих малышей. В интернет-магазине Мишка купила все необходимое для вязания. Теперь все свобоное время вяжу разные интересные штучки. Подружкам так нравятся мои работы, что стали заказывать у меня вещи для себя и своих детишек.</p>
-            <cite class="reviews__user-name">Марина Абрамова</cite>
-            <p class="reviews__user-nick">@marisha-brams</p>
-          </blockquote>
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title title">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__user-name">Анастасия Красильникова</cite>
+              <p class="reviews__user-nick">@misssssiskras</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Очень ценю качественные и продуманные подарки, сделанные с душой, поэтому люблю дарить друзьм и коллегам подарочки ручной работы. Больше всего мне нравятся вязаные вещи для интерьера дома: они стильно украшают квартиру и создают особый домашний уют и атмосферу. Это прекрасные и качественные товары российского производства из экологически чистых материалов.</p>
+              <cite class="reviews__user-name">Екатерина Бонд</cite>
+              <p class="reviews__user-nick">@lady_bond</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Очень люблю вязать детские игрушки и одежду для своих малышей. В интернет-магазине Мишка купила все необходимое для вязания. Теперь все свобоное время вяжу разные интересные штучки. Подружкам так нравятся мои работы, что стали заказывать у меня вещи для себя и своих детишек.</p>
+              <cite class="reviews__user-name">Марина Абрамова</cite>
+              <p class="reviews__user-nick">@marisha-brams</p>
+            </blockquote>
+          </div>
+          <div class="reviews__arrow-wrapper">
+            <button class="reviews__arrow reviews__arrow--back" type="button" aria-label="Предыдущий отзыв"></button>
+            <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв"></button>
+          </div>
+          <a class="reviews__btn btn" href="#">Написать</a>
         </div>
-        <div class="reviews__arrow-wrapper">
-          <button class="reviews__arrow reviews__arrow--back" type="button" aria-label="Предыдущий отзыв"></button>
-          <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв"></button>
-        </div>
-        <a class="reviews__btn btn" href="#">Написать</a>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper container">
         <h2 class="contacts__title title">Контакты</h2>
-        <div class="contacts__wrapper-email">
-          <p class="contacts__email">e-mail:</p>
-          <p class="contacts__email-name"><a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-        </div>
-        <div class="contacts__wrapper-adress">
-          <p class="contacts__adress">адрес:</p>
-          <p class="contacts__adress-text">г. Санкт-Петербург, ул. Большая Конюшенная, <br> д. 19/8, офис 101
-          </p>
+        <div class="contacts__wrapper-info">
+          <div class="contacts__item">
+            <p class="contacts__email">e-mail:</p>
+            <p class="contacts__email-name"><a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__adress">адрес:</p>
+            <p class="contacts__adress-text">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101
+            </p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
-        <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="Схема проезда к интернет-магазину Мишка по адресу ул. Большая Конюшенная, д. 19/8, офис 101">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+          <img src="img/map-mobile@1x.jpg" alt="Схема проезда к интернет-магазину Мишка по адресу ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
       </div>
       <div class="contacts__wrapper-btn container">
         <a class="contacts__btn btn" href="#">Напишите нам</a>

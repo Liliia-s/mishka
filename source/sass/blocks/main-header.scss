@@ -76,7 +76,7 @@
 
   .main-header {
     padding-top: 112px;
-    background: #fafafa url("../../img/hero-tablet@1x.jpg") no-repeat 50% 73%;
+    background: #fafafa url("../../img/hero-tablet@1x.jpg") no-repeat 50% 98%;
   }
 
   .main-header__category {
@@ -91,7 +91,6 @@
     flex-grow: 1;
     font-size: 20px;
     line-height: 30px;
-    color: $color-dark-grey;
 
     &--interior::after {
       top: 30px;
@@ -124,9 +123,5 @@
   .main-header {
     padding-top: 112px;
     background: #fafafa url("../../img/hero-desktop@1x.jpg") no-repeat 50% 74%;
-  }
-
-  .main-header__category-link {
-    color: $color-white;
   }
 }
