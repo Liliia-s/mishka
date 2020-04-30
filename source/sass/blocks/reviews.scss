@@ -51,29 +51,20 @@
   outline: none;
 
   &--back {
-    background: url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+    background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
   }
 
   &--next {
-    background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
+    background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+  }
 
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 

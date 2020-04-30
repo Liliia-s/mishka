@@ -1,3 +1,8 @@
+.main-nav {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .main-nav__wrapper-logo {
   position: relative;
   padding-top: 22px;
@@ -120,7 +125,7 @@
 
   .main-nav__link--basket {
     position: relative;
-    padding: 31px 0px 33px 83px;
+    padding: 31px 0 33px 83px;
   }
 
   .main-nav__link--basket::before {
