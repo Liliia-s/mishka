@@ -6,43 +6,22 @@
 }
 
 .social__item:not(:last-child) {
-  margin-right: 34px;
+  margin-right: 43px;
 }
 
-
 .social__link {
-  width: 32px;
-  height: 32px;
-  padding: 0 11px 10px 15px;
+  // width: 32px;
+  // height: 32px;
+  // padding: 0 11px 10px 15px;
 
-  &--insta {
-    background: url("../img/icon-insta.svg") no-repeat;
-
+  svg {
     &:hover,
     &:focus {
-      background: url("../img/icon-insta-green.svg") no-repeat;
+      fill: #46c1ae;
     }
-  }
 
-  &--fb {
-    background: url("../img/icon-fb.svg") no-repeat;
-
-    &:hover,
-    &:focus {
-      background: url("../img/icon-fb-green.svg") no-repeat;
+    &:active {
+      opacity: 0.3;
     }
-  }
-
-  &--tw {
-    background: url("../img/icon-twitter.svg") no-repeat;
-
-    &:hover,
-    &:focus {
-      background: url("../img/icon-twitter-green.svg") no-repeat;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
