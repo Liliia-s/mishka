@@ -5,10 +5,35 @@
 
 .catalog-products__list {
   @include reset-list;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .catalog-products__item:not(:last-child) {
   padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-products {
+    padding-top: 85px;
+    padding-bottom: 53px;
+  }
+
+  .catalog-products__item:not(:last-child) {
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-products {
+    padding-top: 157px;
+  }
+
+  .catalog-products__list {
+    display: flex;
+  }
+
+  .catalog-products__item:not(:last-child) {
+    margin-right: auto;
+  }
 }

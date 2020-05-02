@@ -57,6 +57,12 @@
     position: relative;
   }
 
+  .main-nav__menu-first,
+  .main-nav__menu-second {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .main-nav__wrapper-first {
     border-bottom: 1px solid $color-light-grey;
   }
@@ -66,16 +72,13 @@
     background-color: #f9f9f9;
   }
 
-  .main-nav__menu-first,
-  .main-nav__menu-second {
-    display: flex;
-    justify-content: space-between;
+  .main-nav__wrapper-second--color {
+    background-color: #f1f1f1;
   }
 
   .main-nav__menu-first {
     padding: 0 50px;
   }
-
 
   .main-nav__list {
     flex-direction: row;
@@ -157,7 +160,6 @@
     font-weight: 400;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .main-nav {

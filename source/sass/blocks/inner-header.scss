@@ -6,6 +6,25 @@
 .inner-header__title {
   @include reset-indent;
   padding-top: 71px;
-  padding-bottom: 75px;
+  padding-bottom: 74px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-header {
+    border-top: none;
+  }
+
+  .inner-header__title {
+    padding-top: 53px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
