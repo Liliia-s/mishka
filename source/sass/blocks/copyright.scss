@@ -1,23 +1,17 @@
 .copyright {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .copyright__name {
-    font-size: 19px;
-    line-height: 28px;
-    padding-right: 30px;
+  font-size: 19px;
+  line-height: 28px;
+  padding-right: 30px;
 }
 
 .copyright__logo {
-    &:hover,
-    &:focus {
-        fill: red;
-    }
-}
-
-.page-footer__copyright {
-    &:active {
-        opacity: 0.3;
-    }
+  &:hover,
+  &:focus {
+    fill: red;
+  }
 }

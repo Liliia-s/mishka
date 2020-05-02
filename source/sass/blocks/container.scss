@@ -1,12 +1,16 @@
 .container {
-    margin: 0 auto;
-    padding: 0 30px;
-    max-width: 1150px;
-    width: 100%
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1150px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
-.container {
-    @media (min-width: 768px) {
-        padding: 0 50px;
-    }
-}
+// .container {
+//   @media (min-width: $tablet-width) {
+//     padding: 0 50px;
+//   }
+// }

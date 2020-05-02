@@ -1,29 +1,30 @@
 body {
-    min-width: 320px;
-
-    @include reset-indent;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 24px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 400;
-    color: $color-dark-grey;
-    background-color: $color-white;
+  @include reset-indent;
+  min-width: 320px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-dark-grey;
+  background-color: $color-white;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
