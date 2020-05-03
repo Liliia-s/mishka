@@ -19,7 +19,7 @@
 }
 
 .main-header__category-link {
-  padding: 25px 29px 30px 29px;
+  padding: 25px 100px 30px 29px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -78,14 +78,15 @@
       position: absolute;
       content: "";
       bottom: -12px;
-      left: 0;
-      right: 0;
+      // left: 0;
+      // right: 0;
       width: 100%;
       // max-width: 1150px;
-      height: 10%;
+      height: 24px;
       // max-height: 14%;
-      margin: 0 auto;
-      background: url("../img/bg-zigzag-fill.svg") repeat-x 100% 100%;
+      // margin: 0 auto;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      background-size: contain;
     }
   }
 
@@ -117,11 +118,11 @@
   }
 
   .main-header__category-link--interior {
-    padding: 27px 12px 30px 35px;
+    padding: 27px 83px 30px 35px;
   }
 
   .main-header__category-link--toys {
-    padding: 28px 29px 30px 38px;
+    padding: 28px 100px 30px 38px;
   }
 }
 
@@ -133,6 +134,7 @@
 
     &::after {
       bottom: -17px;
+      height: 34px;
     }
   }
 
