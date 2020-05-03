@@ -15,13 +15,13 @@
   .inner-header {
     position: relative;
     padding-top: 33px;
-    padding-bottom: 62px;
+    padding-bottom: 71px;
     border-top: none;
 
     &::after {
       position: absolute;
       content: "";
-      bottom: -10px;
+      bottom: 0;
       width: 100%;
       height: 24px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x;
@@ -36,6 +36,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .inner-header {
+    padding-bottom: 97px;
+
+    &::after {
+      bottom: 0;
+      height: 34px;
+    }
+  }
+
   .inner-header__title {
     font-size: 53px;
     line-height: 57px;

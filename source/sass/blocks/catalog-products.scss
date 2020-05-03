@@ -1,6 +1,5 @@
 .catalog-products {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .catalog-products__list {
@@ -9,25 +8,23 @@
   // flex-direction: column;
 }
 
-.catalog-products__item:not(:last-child) {
+.catalog-products__item {
   padding-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-products {
-    padding-top: 77px;
-    padding-bottom: 53px;
+    padding-top: 68px;
   }
 
-  .catalog-products__item:not(:last-child) {
+  .catalog-products__item {
     padding-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-products {
-    padding-top: 148px;
-    padding-bottom: 21px;
+    padding-top: 113px;
   }
 
   .catalog-products__list {

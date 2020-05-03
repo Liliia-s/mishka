@@ -90,10 +90,6 @@
     // padding-bottom: 0;
   }
 
-  .product-card__buy {
-    padding-top: 23px;
-  }
-
   .product-card__price {
     font-size: 17px;
   }
@@ -101,7 +97,9 @@
 
 @media (min-width: $desktop-width) {
   .product-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .product-card__wrapper {
@@ -109,6 +107,6 @@
   }
 
   .product-card__description {
-    padding-bottom: 36px;
+    padding-bottom: 14px;
   }
 }
