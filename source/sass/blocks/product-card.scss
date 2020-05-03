@@ -73,6 +73,7 @@
 
   .product-card__wrapper {
     flex-grow: 1;
+    width: 50%;
   }
 
   .product-card__title {
@@ -84,9 +85,13 @@
   }
 
   .product-card__description {
-    max-width: 275px;
+    // max-width: 275px;
     margin-bottom: auto;
     // padding-bottom: 0;
+  }
+
+  .product-card__buy {
+    padding-top: 23px;
   }
 
   .product-card__price {
@@ -100,6 +105,10 @@
   }
 
   .product-card__wrapper {
+    width: 316px;
   }
 
+  .product-card__description {
+    padding-bottom: 36px;
+  }
 }

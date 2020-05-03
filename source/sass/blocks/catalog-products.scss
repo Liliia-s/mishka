@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-products {
-    padding-top: 85px;
+    padding-top: 77px;
     padding-bottom: 53px;
   }
 
@@ -26,11 +26,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog-products {
-    padding-top: 157px;
+    padding-top: 148px;
+    padding-bottom: 21px;
   }
 
   .catalog-products__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .catalog-products__item:not(:last-child) {
