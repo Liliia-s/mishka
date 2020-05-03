@@ -249,3 +249,22 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-order__header {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-order {
+    padding-top: 61px;
+  }
+
+  .form-order__field {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
