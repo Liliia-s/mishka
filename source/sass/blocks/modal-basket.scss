@@ -1,0 +1,127 @@
+body {
+  position: relative;
+}
+
+.modal-basket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 1361px auto 0;
+  width: 320px;
+  height: 336px;
+  padding-top: 30px;
+  padding-bottom: 44px;
+  background-color: $color-white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal-basket__wrapper {
+  width: 260px;
+  text-align: center;
+}
+
+.modal-basket__title {
+  @include reset-indent;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.modal-basket__choice {
+  @include reset-indent;
+  padding-bottom: 24px;
+  line-height: 30px;
+}
+
+.modal-basket__sizes {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.modal-basket__size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid $color-light-grey;
+}
+
+.modal-basket__input + .modal-basket__size {
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+  }
+
+  // &:active {
+  //   border-color: #63d1bb;
+  // }
+}
+
+.modal-basket__input:checked + .modal-basket__size {
+  border-color: #63d1bb;
+}
+
+.modal-basket__input:disabled + .modal-basket__size {
+  color: $color-light-grey;
+  border-color: #fafafa;
+}
+
+.modal-basket__btn {
+  color: $color-white;
+  background-color: #63d1bb;
+  border-color: #63d1bb;
+
+  &:hover,
+  &:focus {
+    background-color: #54b3a0;
+    border-color: #54b3a0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-basket {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1532px auto 0;
+    width: 567px;
+    height: 336px;
+  }
+
+  .modal-basket__wrapper {
+    width: 354px;
+    margin: 0 auto;
+  }
+
+  .modal-basket__title {
+    font-size: 30px;
+    line-height: 57px;
+    padding-bottom: 15px;
+  }
+
+  .modal-basket__choice {
+    padding-bottom: 22px;
+    font-size: 17px;
+  }
+
+  .modal-basket__size {
+    width: 112px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-basket {
+    margin: 1113px auto 0;
+    width: 567px;
+    height: 336px;
+  }
+}
