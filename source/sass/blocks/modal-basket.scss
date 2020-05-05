@@ -1,25 +1,15 @@
-body {
-  position: relative;
-}
-
 .modal-basket {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 1361px auto 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
   width: 320px;
-  height: 336px;
-  padding-top: 30px;
-  padding-bottom: 44px;
+  padding: 30px 30px 46px;
+  text-align: center;
   background-color: $color-white;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
-}
-
-.modal-basket__wrapper {
-  width: 260px;
-  text-align: center;
+  transform: translateX(-50%);
 }
 
 .modal-basket__title {
@@ -89,17 +79,9 @@ body {
 
 @media (min-width: $tablet-width) {
   .modal-basket {
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 1532px auto 0;
     width: 567px;
-    height: 336px;
-  }
-
-  .modal-basket__wrapper {
-    width: 354px;
-    margin: 0 auto;
+    padding-left: 105px;
+    padding-right: 105px;
   }
 
   .modal-basket__title {
@@ -115,13 +97,5 @@ body {
 
   .modal-basket__size {
     width: 112px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal-basket {
-    margin: 1113px auto 0;
-    width: 567px;
-    height: 336px;
   }
 }
