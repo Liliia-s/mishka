@@ -77,6 +77,7 @@
   }
 
   .product-card__title {
+    max-width: 86%;
     font-size: 20px;
   }
 
@@ -104,6 +105,10 @@
 
   .product-card__wrapper {
     width: 316px;
+  }
+
+  .product-card__title {
+    max-width: 88%;
   }
 
   .product-card__description {

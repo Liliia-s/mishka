@@ -9,9 +9,9 @@
   padding-right: 30px;
 }
 
-.copyright__logo {
+.copyright__logo-link svg {
   &:hover,
   &:focus {
-    fill: red;
+    fill: #46c1ae;
   }
 }
