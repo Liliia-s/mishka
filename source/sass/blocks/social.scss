@@ -10,18 +10,12 @@
 }
 
 .social__link {
-  // width: 32px;
-  // height: 32px;
-  // padding: 0 11px 10px 15px;
+  &:hover svg,
+  &:focus svg {
+    fill: #46c1ae;
+  }
 
-  svg {
-    &:hover,
-    &:focus {
-      fill: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
