@@ -205,15 +205,18 @@
       </div>
     </div>
   </footer>
-  <section class="modal-window modal-basket visually-hidden">
-    <h2 class="modal-basket__title">Добавить в корзину</h2>
-    <p class="modal-basket__choice">Выберите размер:</p>
-    <div class="modal-basket__sizes">
-      <button class="modal-basket__size modal-basket__size--active" type="button">s</button>
-      <button class="modal-basket__size" type="button">m</button>
-      <button class="modal-basket__size" type="button">l</button>
-    </div>
-    <button class=" modal-basket__btn btn btn--add" type="button">Добавить</button>
+  <section class="modal-basket">
+      <h2 class="modal-basket__title title">Добавить в корзину</h2>
+      <p class="modal-basket__choice">Выберите размер:</p>
+      <div class="modal-basket__sizes">
+        <input class="modal-basket__input visually-hidden" type="radio" name="size" value="size-s" id="size-s" checked>
+        <label class="modal-basket__size" for="size-s">s</label>
+        <input class="modal-basket__input visually-hidden" type="radio" name="size" value="size-m" id="size-m">
+        <label class="modal-basket__size" for="size-m">m</label>
+        <input class="modal-basket__input visually-hidden" type="radio" name="size" value="size-l" id="size-l">
+        <label class="modal-basket__size" for="size-l">l</label>
+      </div>
+      <button class="modal-basket__btn btn btn--add" type="button">Добавить</button>
   </section>
 </body>
 
