@@ -188,7 +188,6 @@
   background: transparent;
   border: none;
   border-bottom: 2px solid $color-black;
-  outline: none;
 
   &:hover,
   &:focus,
@@ -394,8 +393,8 @@
   .form-order__wrapper--person {
     display: flex;
     align-items: baseline;
-    padding-top: 64px;
-    padding-bottom: 12px;
+    padding-top: 47px;
+    padding-bottom: 29px;
   }
 
   .form-order__title--person {
@@ -416,14 +415,14 @@
 
   .form-order__item-person {
     display: flex;
-    padding-bottom: 38px;
+    align-items: baseline;
+    padding-bottom: 20px;
   }
 
   .form-order__text-input {
-    padding: 0;
-    padding-bottom: 14px;
-    padding-left: 17px;
+    padding: 14px 17px;
     font-size: 19px;
+    line-height: 18px;
   }
 
   .form-order__item--person {
@@ -439,14 +438,14 @@
   // }
 
   .form-order__wrapper--contacts {
-    padding-top: 62px;
-    padding-bottom: 14px;
+    padding-top: 46px;
+    padding-bottom: 30px;
   }
 
   .form-order__contacts-box {
     display: flex;
     align-items: baseline;
-    padding-bottom: 37px;
+    padding-bottom: 20px;
   }
 
   .form-order__contacts-title {
