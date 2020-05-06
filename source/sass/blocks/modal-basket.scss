@@ -26,8 +26,8 @@
 
 .modal-basket__sizes {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 23px;
 }
 
 .modal-basket__size {
@@ -36,6 +36,7 @@
   align-items: center;
   width: 82px;
   height: 52px;
+  margin-bottom: 7px;
   padding: 0;
   font-size: 17px;
   line-height: 16px;
@@ -43,6 +44,10 @@
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $color-light-grey;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 6px;
+  }
 }
 
 .modal-basket__input + .modal-basket__size {
