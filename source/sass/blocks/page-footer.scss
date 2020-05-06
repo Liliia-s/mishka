@@ -2,14 +2,6 @@
   background-color: $color-light-grey-2;
 }
 
-// .page-footer__wrapper {
-//   margin: 0 30px;
-// }
-
-// .page-footer__logo {
-//     // display: none;
-// }
-
 .page-footer__social {
   padding: 28px 0 19px;
   border-bottom: 1px solid #e5e5e5;
@@ -17,34 +9,10 @@
 
 .page-footer__copyright {
   padding: 21px 0 16px;
-
-  &:active {
-    opacity: 0.3;
-  }
 }
-
 
 .page-footer__logo {
   display: none;
-
-  // @media (min-width: $tablet-width) {
-  //   display: block;
-  //   position: relative;
-
-  //   &:hover::before,
-  //   &:focus::before {
-  //     content: "";
-  //     position: absolute;
-  //     width: 102px;
-  //     height: 34px;
-  //     z-index: 1;
-  //     background: url("../img/logo-footer-green.svg") no-repeat;
-  //   }
-
-  //   &:active {
-  //     opacity: 0.3;
-  //   }
-  // }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,7 +38,7 @@
   }
 
   .page-footer__copyright {
-    padding: 8px 0 17px 0;
+    padding-top: 8px;
   }
 }
 
