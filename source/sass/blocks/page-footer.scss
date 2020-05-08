@@ -29,6 +29,15 @@
   .page-footer__logo {
     display: block;
     padding-right: 82px;
+
+    &[href]:hover .page-footer__logo-image,
+    &[href]:focus .page-footer__logo-image {
+      fill: #46c1ae;
+    }
+
+    &[href]:active .page-footer__logo-image {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {

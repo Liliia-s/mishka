@@ -194,6 +194,12 @@
   &:active {
     border-color: $color-mint;
   }
+
+  &:hover + svg,
+  &:focus + svg,
+  &:active + svg {
+    fill: $color-mint;
+  }
 }
 
 .form-order__text-input::placeholder {
@@ -223,6 +229,23 @@
 
 .form-order__legend--tel {
   padding-right: 31px;
+}
+
+.form-order__content--tel,
+.form-order__content--mail {
+  position: relative;
+}
+
+.form-order__icon-phone {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+}
+
+.form-order__icon-mail {
+  position: absolute;
+  top: 12px;
+  right: 4px;
 }
 
 .form-order__text-input--tel {
@@ -459,6 +482,16 @@
     padding-right: 0;
   }
 
+  .form-order__icon-phone {
+    top: 14px;
+    right: 26px;
+  }
+
+  .form-order__icon-mail {
+    top: 15px;
+    right: 22px;
+  }
+
   .form-order__wrapper--comment {
     display: flex;
     padding-top: 50px;
@@ -542,6 +575,14 @@
 
   .form-order__item--color {
     width: 30%;
+  }
+
+  .form-order__icon-phone {
+    right: 6px;
+  }
+
+  .form-order__icon-mail {
+    right: 2px;
   }
 
   .form-order__wrapper--comment {

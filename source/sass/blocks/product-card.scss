@@ -59,11 +59,14 @@
 }
 
 .product-card__button {
-  width: 21px;
-  height: 21px;
-  background: url("../img/icon-cart.svg") no-repeat;
-  background-color: transparent;
-  border: none;
+  &:hover .product-card__icon-basket,
+  &:focus .product-card__icon-basket {
+    fill: #63d1bb;
+  }
+
+  &:active .product-card__icon-basket {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -91,8 +94,17 @@
     // padding-bottom: 0;
   }
 
+  .product-card__buy {
+    position: relative;
+  }
+
   .product-card__price {
     font-size: 17px;
+  }
+
+  .product-card__icon-basket {
+    position: absolute;
+    right: 6px;
   }
 }
 
