@@ -28,6 +28,28 @@
   font-weight: $font-weight-bold;
 }
 
+.main-nav__link--loupe {
+  position: relative;
+}
+
+.main-nav_icon-loupe {
+  position: absolute;
+  top: 31px;
+  left: 32px;
+  // fill: #231f20;
+}
+
+.main-nav__link--basket {
+  position: relative;
+}
+
+.main-nav_icon-basket {
+  position: absolute;
+  top: 29px;
+  left: 30px;
+  // fill: #231f20;
+}
+
 .main-nav__list--other,
 .main-nav__list--delivery {
   display: none;
@@ -43,8 +65,20 @@
     color: rgba($color-black, 0.6);
   }
 
+  &:hover .main-nav_icon-loupe,
+  &:focus .main-nav_icon-loupe,
+  &:hover .main-nav_icon-basket,
+  &:focus .main-nav_icon-basket {
+    fill: #63d1bb;
+  }
+
   &:active {
     color: rgba($color-black, 0.3);
+  }
+
+  &:active .main-nav_icon-loupe,
+  &:active .main-nav_icon-basket {
+    opacity: 0.3;
   }
 }
 
@@ -111,19 +145,23 @@
     padding: 0;
   }
 
+  .main-nav__link--loupe {
+    padding: 50px 31px 14px 51px;
+    font-size: 0;
+  }
+
+  .main-nav_icon-loupe {
+    top: 36px;
+    left: 33px;
+  }
+
   .main-nav__link--basket {
-    position: relative;
     padding: 31px 0 33px 83px;
   }
 
-  .main-nav__link--basket::before {
-    position: absolute;
-    content: "";
-    top: 35px;
+  .main-nav_icon-basket {
+    top: 34px;
     left: 31px;
-    width: 20px;
-    height: 19px;
-    background: url("../img/icon-cart.svg") no-repeat;
   }
 
   .main-nav__list--box,
@@ -134,22 +172,6 @@
   .main-nav__item--loupe {
     border-right: 1px solid $color-light-grey;
     border-left: 1px solid $color-light-grey;
-  }
-
-  .main-nav__link--loupe {
-    position: relative;
-    padding: 50px 31px 14px 51px;
-    font-size: 0;
-  }
-
-  .main-nav__link--loupe::before {
-    position: absolute;
-    top: 37px;
-    left: 33px;
-    content: "";
-    width: 18px;
-    height: 18px;
-    background: url("../img/icon-search.svg") no-repeat;
   }
 
   .main-nav__list--delivery {
