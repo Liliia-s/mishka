@@ -4,8 +4,6 @@
 
 .catalog-products__list {
   @include reset-list;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .catalog-products__item {
@@ -32,7 +30,7 @@
     flex-wrap: wrap;
   }
 
-  .catalog-products__item:not(:last-child) {
-    margin-right: auto;
+  .catalog-products__item:not(:nth-child(3n)) {
+    margin-right: 50px;
   }
 }

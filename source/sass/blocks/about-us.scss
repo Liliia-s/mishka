@@ -21,7 +21,7 @@
   padding-bottom: 31px;
 }
 
-.about-us__list-item {
+.about-us__list {
   @include reset-list;
   color: $color-black;
 }
@@ -112,11 +112,8 @@
   }
 
   .about-us__list {
-    display: flex;
-  }
-
-  .about-us__list-item {
-    width: 100%;
+    column-count: 2;
+    column-gap: 2px;
   }
 
   .about-us__item {
@@ -129,6 +126,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     padding-top: 60px;
+    padding-right: 226px;
     padding-bottom: 34px;
     padding-left: 224px;
 
@@ -143,9 +141,5 @@
     padding-bottom: 48px;
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .about-us__list-item {
-    width: 40%;
   }
 }
