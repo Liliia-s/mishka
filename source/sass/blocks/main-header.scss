@@ -46,18 +46,19 @@
   }
 }
 
-.main-header__icon-interior {
+.main-header__icon {
   position: absolute;
-  top: 22px;
-  right: 35px;
   opacity: 0.5;
 }
 
-.main-header__icon-toy {
-  position: absolute;
+.main-header__icon--interior {
+  top: 22px;
+  right: 35px;
+}
+
+.main-header__icon--toy {
   top: 21px;
   right: 26px;
-  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,12 +108,12 @@
     padding: 28px 100px 30px 38px;
   }
 
-  .main-header__icon-interior {
+  .main-header__icon--interior {
     top: 29px;
     right: 35px;
   }
 
-  .main-header__icon-toy {
+  .main-header__icon--toy {
     top: 31px;
     right: 34px;
   }

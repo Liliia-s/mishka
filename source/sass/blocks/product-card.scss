@@ -11,6 +11,16 @@
   border: 1px solid $color-light-grey;
 }
 
+.product-card__wrapper--shadow {
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
 .product-card__link {
   color: $color-black;
 
@@ -116,16 +126,6 @@
 
   .product-card__wrapper {
     width: 316px;
-  }
-
-  .product-card__wrapper--shadow {
-    &:hover {
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-    }
-
-    &:active {
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-    }
   }
 
   .product-card__title {
