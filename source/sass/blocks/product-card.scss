@@ -1,5 +1,6 @@
 .product-card__image {
   display: block;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -89,9 +90,7 @@
   }
 
   .product-card__description {
-    // max-width: 275px;
     margin-bottom: auto;
-    // padding-bottom: 0;
   }
 
   .product-card__buy {

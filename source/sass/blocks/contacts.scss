@@ -55,8 +55,6 @@
 }
 
 .contacts__adress-text {
-  // max-width: 145px;
-  // max-width: 63%;
   line-height: 30px;
 }
 
@@ -77,6 +75,10 @@
 .contacts__map {
   padding-bottom: 35px;
   text-align: center;
+}
+
+.contacts__map-image {
+  width: 100%;
 }
 
 @media (min-width: 360px) and (max-width: 767px), (min-width: 820px) and (max-width: 1149px) {
@@ -119,7 +121,6 @@
 
   .contacts__wrapper-info {
     display: flex;
-    // justify-content: space-between;
   }
 
   .contacts__item {
