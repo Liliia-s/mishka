@@ -25,8 +25,12 @@
   right: 21px;
   width: 40px;
   height: 30px;
-  background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
+  background: url("../img/icon-menu-open.svg") no-repeat 50% 50%;
   border: none;
+}
+
+.main-nav__toggle--close {
+  background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
 }
 
 .main-nav__list {
@@ -92,7 +96,19 @@
   border-bottom: 1px solid $color-light-grey;
 }
 
+.main-nav__list--hide {
+  display: none;
+}
+
+.main-nav__list--show {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
+  .main-nav__list--hide {
+    display: flex;
+  }
+
   .main-nav {
     position: relative;
   }
