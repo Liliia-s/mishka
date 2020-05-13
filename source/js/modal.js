@@ -1,9 +1,9 @@
-var link = document.querySelectorAll(".product__btn, .product-card__button");
+var orderBtn = document.querySelectorAll(".product__btn, .product-card__button");
 var popup = document.querySelector(".modal-basket");
 var overlay = document.querySelector(".overlay");
 
-for (var i = 0; i < link.length; i++) {
-  link[i].addEventListener("click", function (evt) {
+for (var i = 0; i < orderBtn.length; i++) {
+  orderBtn[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     overlay.classList.add("overlay__show");
     popup.classList.add("modal-basket__show");
