@@ -79,6 +79,10 @@
   }
 }
 
+.modal-basket__show {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .modal-basket {
     width: 567px;
