@@ -29,12 +29,12 @@
   right: 21px;
   width: 40px;
   height: 30px;
-  background: url("../img/icon-menu-open.svg") no-repeat 50% 50%;
+  background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
   border: none;
 }
 
-.main-nav__toggle--close {
-  background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
+.main-nav__toggle--open {
+  background: url("../img/icon-menu-open.svg") no-repeat 50% 50%;
 }
 
 .main-nav__list {
