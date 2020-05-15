@@ -45,6 +45,7 @@
   font-weight: $font-weight-bold;
   line-height: 18px;
   color: $color-black;
+  cursor: pointer;
 }
 
 .form-order__item--type {
@@ -65,19 +66,6 @@
     border: 2px solid $color-dark-grey;
     border-radius: 50px;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: $color-mint;
-  }
-
-  &:active::before {
-    border-color: rgba($color-dark-grey, 0.3);
-  }
-}
-
-.form-order__type-input:disabled + .form-order__item--type::before {
-  border-color: rgba($color-dark-grey, 0.3);
 }
 
 .form-order__type-input:checked + .form-order__item--type {
@@ -91,10 +79,6 @@
     border: 8px solid $color-mint;
     border-radius: 50px;
   }
-}
-
-.form-order__type-input:disabled + .form-order__item--type::after {
-  border-color: rgba($color-dark-grey, 0.3);
 }
 
 .form-order__wrapper--color {
@@ -124,19 +108,6 @@
     height: 40px;
     border: 2px solid $color-dark-grey;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: $color-mint;
-  }
-
-  &:active::before {
-    border-color: rgba($color-dark-grey, 0.3);
-  }
-}
-
-.form-order__color-input:disabled + .form-order__item--color::before {
-  border-color: rgba($color-dark-grey, 0.3);
 }
 
 .form-order__color-input:checked + .form-order__item--color {
@@ -149,10 +120,6 @@
     height: 16px;
     background: url("../img/icon-tick.svg") no-repeat;
   }
-}
-
-.form-order__color-input:disabled + .form-order__item--color::after {
-  opacity: 0.3;
 }
 
 .form-order__wrapper--person {
@@ -273,6 +240,42 @@
   line-height: 16px;
 }
 
+.form-order__type-input,
+.form-order__color-input {
+  &:not(:disabled),
+  &:not(:disabled):checked {
+    border-color: $color-mint;
+
+    &:hover + .form-order__item::before,
+    &:focus + .form-order__item::before {
+      border-color: $color-mint;
+    }
+
+    &:active + .form-order__item::before {
+      border-color: rgba($color-dark-grey, 0.3);
+    }
+  }
+
+  &:not(:disabled):checked + .form-order__item::before {
+    border-color: $color-dark-grey;
+  }
+
+  &:disabled + .form-order__item {
+    opacity: 0.3;
+    cursor: default;
+
+    &--type::after {
+      border-color: rgba($color-dark-grey, 0.3);
+    }
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+      cursor: default;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-order {
     padding-top: 61px;
@@ -341,7 +344,7 @@
       left: 16px;
       width: 20px;
       height: 20px;
-      border: 10px solid $color-mint;
+      border-width: 10px;
     }
   }
 

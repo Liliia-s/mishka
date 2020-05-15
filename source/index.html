@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Интернет-магазин вязаных игрушек Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -64,17 +64,21 @@
       <div class="container">
         <h1 class="main-header__title title">Милые штуки ручной <br> работы для дома</h1>
       </div>
-      <div class="main-header__category container">
-        <a class="main-header__category-link main-header__category-link--interior" href="#">Предметы<br>интерьера
-          <svg class="main-header__icon main-header__icon--interior" width="41" height="63" fill="#149080">
-            <use xlink:href="img/sprite.svg#icon-interior"></use>
-          </svg>
-        </a>
-        <a class="main-header__category-link main-header__category-link--toys" href="#">Детские<br>игрушки
-          <svg class="main-header__icon main-header__icon--toy" width="60" height="60" fill="#149080">
-            <use xlink:href="img/sprite.svg#icon-toy"></use>
-          </svg>
-        </a>
+      <div class="main-header__wrapper-category container">
+        <p class="main-header__category main-header__category--interior">
+          <a class="main-header__category-link main-header__category-link--interior" href="#">Предметы<br>интерьера
+            <svg class="main-header__icon main-header__icon--interior" width="41" height="63" fill="#149080" fill-opacity="0.5">
+              <use xlink:href="img/sprite.svg#icon-interior"></use>
+            </svg>
+          </a>
+        </p>
+        <p class="main-header__category main-header__category--toys">
+          <a class="main-header__category-link main-header__category-link--toys" href="#">Детские<br>игрушки
+            <svg class="main-header__icon main-header__icon--toy" width="60" height="60" fill="#149080" fill-opacity="0.5">
+              <use xlink:href="img/sprite.svg#icon-toy"></use>
+            </svg>
+          </a>
+        </p>
       </div>
     </div>
     <article class="product container">
@@ -192,7 +196,7 @@
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <svg class="page-footer__logo-image" width="102" height="34" fill="#231f20">
-          <use xlink:href="img/sprite.svg#logo-footer"></use>
+          <use xlink:href="img/sprite.svg#icon-logo_footer"></use>
         </svg>
       </a>
       <div class="page-footer__social social">
