@@ -210,6 +210,10 @@
   padding-right: 40px;
 }
 
+.form-order__text-input--mail:invalid:not(:placeholder-shown) {
+  background-color: rgba(237, 181, 181, 1);
+}
+
 .form-order__legend--email {
   padding-right: 23px;
 }
@@ -501,7 +505,7 @@
 
 @media (min-width: $desktop-width) {
   .form-order {
-    padding-top: 106px;
+    padding-top: 105px;
   }
 
   .form-order__header {

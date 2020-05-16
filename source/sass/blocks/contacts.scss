@@ -35,7 +35,7 @@
 
 .contacts__item {
   display: flex;
-  width: 100%;
+  // width: 100%;
 }
 
 .contacts__email,
@@ -91,6 +91,10 @@
   width: 100%;
 }
 
+.contacts__btn {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 360px) and (max-width: 767px), (min-width: 820px) and (max-width: 1149px) {
   .contacts__adress-text br {
     display: none;
@@ -136,6 +140,10 @@
   .contacts__item {
     padding-bottom: 0;
     font-size: 17px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
   .contacts__email {
