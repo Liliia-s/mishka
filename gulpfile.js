@@ -65,7 +65,8 @@ gulp.task("sprite", function () {
 gulp.task("htmlmin", function () {
   return gulp.src("source/*.html")
     .pipe(htmlmin({
-      collapseWhitespace: true
+      collapseWhitespace: true,
+      ignoreCustomFragments: [/<br>\s/gi]
     }))
     .pipe(gulp.dest("build"));
 });
