@@ -1,6 +1,6 @@
-.main-nav {
-  position: relative;
-}
+// .main-nav {
+//   position: relative;
+// }
 
 .main-nav__menu-first {
   padding: 0;
@@ -132,6 +132,7 @@
   }
 
   .main-nav__menu-first {
+    position: relative;
     padding: 0 50px;
   }
 
@@ -155,7 +156,7 @@
   .main-nav__list--box {
     position: absolute;
     left: 50px;
-    bottom: 0;
+    bottom: -42px;
     z-index: 1;
   }
 
@@ -199,6 +200,8 @@
 
   .main-nav__list--delivery {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 305px;
     padding-top: 18px;
     margin-left: auto;
     font-weight: 400;
@@ -223,6 +226,7 @@
   .main-nav__list--box {
     position: static;
     order: -1;
+    max-width: 380px;
     font-size: 17px;
     background-color: transparent;
     border-top: none;
@@ -237,6 +241,10 @@
     padding-bottom: 33px;
   }
 
+  .main-nav__list--user {
+    max-width: 350px;
+  }
+
   .main-nav__link--order {
     padding-top: 31px;
     padding-left: 34px;
@@ -245,18 +253,22 @@
 
   .main-nav__list--other {
     display: flex;
+    flex-wrap: wrap;
     font-size: 15px;
+    max-width: 500px;
   }
 
   .main-nav__list--delivery {
+    max-width: 500px;
     margin-left: 0;
   }
 
-  .main-nav__link--new {
-    padding: 18px 62px 0 0;
-  }
-
+  .main-nav__link--new,
   .main-nav__link--sale {
     padding: 18px 0 0;
+  }
+
+  .main-nav__item--other:not(:last-child) {
+    padding-right: 62px;
   }
 }

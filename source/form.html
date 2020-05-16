@@ -6,8 +6,8 @@
   <title>Интернет-магазин вязаных игрушек Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -50,8 +50,8 @@
       <div class="main-nav__wrapper-second main-nav__wrapper-second--color">
         <div class="main-nav__menu-second container">
           <ul class="main-nav__list main-nav__list--other">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--other"><a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--other"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
           </ul>
           <ul class="main-nav__list main-nav__list--delivery">
             <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
@@ -182,9 +182,11 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html" aria-label="Логотип Интернет-магазина Мишка">
-        <svg class="page-footer__logo-image" width="102" height="34" fill="#231f20">
-          <use xlink:href="img/sprite.svg#icon-logo_footer"></use>
-        </svg>
+        <div>
+          <svg class="page-footer__logo-image" width="102" height="34" fill="#231f20">
+            <use xlink:href="img/sprite.svg#icon-logo_footer"></use>
+          </svg>
+        </div>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

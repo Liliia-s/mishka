@@ -1,7 +1,7 @@
 .product {
   position: relative;
   padding-top: 27px;
-  padding-bottom: 39px;
+  padding-bottom: 30px;
 }
 
 .product__title {
@@ -64,6 +64,10 @@
   font-weight: $font-weight-bold;
   text-align: center;
   padding-bottom: 26px;
+}
+
+.product__btn {
+  margin-bottom: 9px;
 }
 
 @media (min-width: $tablet-width) {
@@ -132,7 +136,7 @@
 @media (min-width: $desktop-width) {
   .product {
     padding-top: 123px;
-    padding-bottom: 65px;
+    padding-bottom: 57px;
   }
 
   .product__title-wrapper {

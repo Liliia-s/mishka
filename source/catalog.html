@@ -6,8 +6,8 @@
   <title>Каталог товаров вязаных игрушек Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -50,8 +50,8 @@
       <div class="main-nav__wrapper-second main-nav__wrapper-second--color">
         <div class="main-nav__menu-second container">
           <ul class="main-nav__list main-nav__list--other">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--other"><a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--other"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
           </ul>
           <ul class="main-nav__list main-nav__list--delivery">
             <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
@@ -229,9 +229,11 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Онлайн‑курс HTML и CSS - 2 уровень в HTML Academy">
           <b class="copyright__name">Разработано</b>
-          <svg width="27" height="34" fill="#63d1bb">
-            <use xlink:href="img/sprite.svg#icon-html_academy"></use>
-          </svg>
+          <div>
+            <svg width="27" height="34" fill="#63d1bb">
+              <use xlink:href="img/sprite.svg#icon-html_academy"></use>
+            </svg>
+          </div>
         </a>
       </div>
     </div>
