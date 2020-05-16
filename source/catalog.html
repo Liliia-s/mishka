@@ -6,6 +6,8 @@
   <title>Каталог товаров вязаных игрушек Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body>
@@ -181,7 +183,7 @@
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
           </picture>
-          <button class="video__play-btn" type="button"></button>
+          <button class="video__play-btn" type="button" aria-label="Кнопка для воспроизведения видео"></button>
         </div>
         <div class="video__wrapper-description video__wrapper-description--shadow">
           <div class="video__title-wrapper">
@@ -250,8 +252,8 @@
     </div>
   </section>
   <div class="overlay"></div>
-  <script src="js/menu.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/modal.min.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
