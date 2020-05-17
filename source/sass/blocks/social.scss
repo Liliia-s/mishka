@@ -3,10 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .social__item:not(:last-child) {
-  margin-right: 43px;
+  margin-right: 40px;
 }
 
 .social__link {
