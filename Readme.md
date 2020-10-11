@@ -2,6 +2,7 @@
 
 * Студент: [Liliia](https://up.htmlacademy.ru/adaptive/19/user/1273993).
 * Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
+https://liliia-s.github.io/1273993-mishka-19/
 
 ---
 
