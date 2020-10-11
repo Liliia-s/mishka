@@ -19,6 +19,7 @@ var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
 var pipeline = require("readable-stream").pipeline;
 var jsmerge = require("gulp-concat");
+var ghPages = require("gulp-gh-pages");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -138,5 +139,10 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "js", "htmlmin"));
+gulp.task("deploy", function() {
+  return gulp.src("/build/**/*")
+    .pipe(ghPages());
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "js", "htmlmin", "deploy"));
 gulp.task("start", gulp.series("build", "server"));
