@@ -144,5 +144,5 @@ gulp.task("deploy", function() {
     .pipe(ghPages());
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "js", "htmlmin", "deploy"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "js", "htmlmin"));
 gulp.task("start", gulp.series("build", "server"));
