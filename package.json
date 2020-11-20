@@ -1,5 +1,5 @@
 {
-  "name": "mishka-19",
+  "name": "c",
   "version": "17.0.0",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
@@ -57,6 +57,18 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8"
-  }
+    "node": "^8 || ^10"
+  },
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liliia-s/1273993-mishka-19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liliia-s/1273993-mishka-19/issues"
+  },
+  "homepage": "https://github.com/Liliia-s/1273993-mishka-19#readme"
 }
