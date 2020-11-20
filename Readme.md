@@ -1,4 +1,4 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Мишка» [![Build status][travis-image]][travis-url]
 
 * Студент: [Liliia](https://up.htmlacademy.ru/adaptive/19/user/1273993).
 * Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
