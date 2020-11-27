@@ -2,7 +2,7 @@
 
 **Студент:** Лилия
 
-**Онлайн-версия:** <a href="https://mishka.liliia-s.vercel.app/" target="_blank">сайт</a>
+**Онлайн-версия:** https://mishka.liliia-s.vercel.app/
 
 ---
 
